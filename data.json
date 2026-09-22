@@ -1,0 +1,239 @@
+{
+  "updated_at": "2026-09-22T16:57:59+02:00",
+  "updated_at_label": "22.09.2026, 16:57 MESZ",
+  "futures": [
+    {
+      "symbol": "NQ=F",
+      "name": "Nasdaq-100 Micro",
+      "alias": "MNQ/NQ",
+      "price": 30918.0,
+      "change_pct": 0.433,
+      "change_5d_pct": 6.779,
+      "change_30d_pct": 6.226,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "ES=F",
+      "name": "S&P 500 Micro",
+      "alias": "MES/ES",
+      "price": 7830.25,
+      "change_pct": -0.041,
+      "change_5d_pct": 3.176,
+      "change_30d_pct": 2.093,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "GC=F",
+      "name": "Gold",
+      "alias": "GC",
+      "price": 4357.3,
+      "change_pct": -0.607,
+      "change_5d_pct": 0.565,
+      "change_30d_pct": -7.248,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "CL=F",
+      "name": "Rohöl (WTI)",
+      "alias": "CL",
+      "price": 91.2,
+      "change_pct": -1.267,
+      "change_5d_pct": -13.824,
+      "change_30d_pct": 7.281,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    }
+  ],
+  "calendar": [
+    {
+      "time_cest": "14:15",
+      "event": "ADP Employment Change (weekly)",
+      "impact": "hoch"
+    },
+    {
+      "time_cest": "16:00",
+      "event": "Richmond Fed Manufacturing & Services (Sep)",
+      "impact": "mittel"
+    },
+    {
+      "time_cest": "16:05–16:20",
+      "event": "Fed Williams (NY, Voter) + Fed Jefferson (Vice Chair) Speeches",
+      "impact": "hoch"
+    },
+    {
+      "time_cest": "19:00",
+      "event": "US 2y Note Auction ($69B) + Fed Barkin Rede",
+      "impact": "mittel"
+    },
+    {
+      "time_cest": "22:30",
+      "event": "API Crude Oil Inventories",
+      "impact": "mittel (Öl)"
+    }
+  ],
+  "politics": [
+    "Trump–Xi-Gipfel Do 24.09. im Weissen Haus: Fokus Trade-Truce-Verlängerung, AI, Critical Minerals",
+    "Trump signalisiert Offenheit für Treffen mit Irans Präsident Pezeshkian (UNGA NY) — Öl-Narrativ",
+    "US–China-Wochenendgespräche: AI-Dialog-Kanal vorgeschlagen (Bessent); positives Vorzeichen für Summit",
+    "Trump gestern NYC: Treffen mit Mayor Mamdani; UN-Woche läuft",
+    "USA plant Wiedereröffnung Militärbasis Süd-Grönland (FJ)"
+  ],
+  "crypto": [
+    {
+      "symbol": "XRP-USD",
+      "name": "XRP",
+      "alias": "XRP",
+      "price": 1.5574,
+      "change_pct": 4.049,
+      "change_5d_pct": 20.182,
+      "change_30d_pct": 6.4,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "alias": "BTC",
+      "price": 86075.38,
+      "change_pct": 0.283,
+      "change_5d_pct": 12.659,
+      "change_30d_pct": 11.665,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    }
+  ],
+  "asia_wrap": "Risk-on nach Nasdaq-Rekordschluss Mo: AI/Semis (AMD >$1T) tragen NQ; Asien/Overnight halten NQ knapp grün, ES flat. Gold leicht weicher, Öl weiter unter Druck (−2.7% vs Mo). 10y wieder unter 5% stützt Duration/Tech.",
+  "london_setup": "London: Bias vorsichtig risk-on in Equities solange NQ ATH-Zone hält. Fokus ADP 14:15 und Fed-Speak Williams/Jefferson 16:05–16:20 CEST — nach jüngstem Hike ist Ton entscheidend. Öl-Schwäche weiter beobachten (API 22:30). Politik: Trump–Xi Do und Iran/UNGA-Diplomatie als Vol-Treiber.",
+  "takeaway": "Equities fest (NQ ATH-Nähe), Crypto stark (XRP/BTC +5–6%), Öl weiter abverkauft, Gold ruhig. Bias long MNQ solange Futures halten — Fed-Speak + ADP als Intraday-Risiko; Do Trump–Xi Event-Risk.",
+  "sources": [
+    "Yahoo Finance CME Futures (NQ=F, ES=F, GC=F, CL=F)",
+    "Yahoo Finance Crypto (XRP-USD, BTC-USD)",
+    "FinancialJuice RSS (feed.ashx?xy=rss)",
+    "US economic calendar 22.09.2026 (ADP, Richmond Fed, Fed speakers, 2y auction, API)",
+    "Reuters / market wires: Trump–Xi, Iran/UNGA, US–China AI talks"
+  ],
+  "financialjuice": [
+    {
+      "time": "16:35",
+      "title": "EU Envoys agree to renew Russia sanctions on nearly 3,000 companies and individuals for 3 years, not the usual 6 months - EU Diplomats.",
+      "link": "https://www.financialjuice.com/News/9773826/EU-Envoys-agree-to-renew-Russia-sanctions-on-nearly-3000-companies-and-individuals-for-3-years-not-the-usual-6-months---EU-Diplomats.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "16:17",
+      "title": "Fed's Jefferson: The discount window is shock absorber during market stress, supports functioning of short-term funding markets, treasury liquidity.",
+      "link": "https://www.financialjuice.com/News/9773791/Feds-Jefferson-The-discount-window-is-shock-absorber-during-market-stress-supports-functioning-of-short-term-funding-markets-treasury-liquidity.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "14:35",
+      "title": "Trump's UN speech to make the case for how he uses America's power to confront Iran, cartel violence and other threats, reshaping the world to help the US - White House official tells Fox News",
+      "link": "https://www.financialjuice.com/News/9773614/Trumps-UN-speech-to-make-the-case-for-how-he-uses-Americas-power-to-confront-Iran-cartel-violence-and-other-threats-reshaping-the-world-to-help-the-US---White-House-official-tells-Fox-News.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "14:10",
+      "title": "China's Xi unlikely to bring business delegation to meeting with trump - WSJ citing Sources",
+      "link": "https://www.financialjuice.com/News/9773572/Chinas-Xi-unlikely-to-bring-business-delegation-to-meeting-with-trump---WSJ-citing-Sources.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "13:43",
+      "title": "US Secretary of State Rubio: Majority of oil price increases due to Yemen and Ukraine",
+      "link": "https://www.financialjuice.com/News/9773525/US-Secretary-of-State-Rubio-Majority-of-oil-price-increases-due-to-Yemen-and-Ukraine.aspx?xy=rss",
+      "source": "FinancialJuice"
+    }
+  ],
+  "financialjuice_url": "https://www.financialjuice.com/home",
+  "financialjuice_note": "Top 5 · letzte ~24h · auto alle 15 Min",
+  "stocks": [
+    {
+      "symbol": "ONDS",
+      "name": "Ondas Holdings",
+      "alias": "ONDS",
+      "price": 7.575,
+      "change_pct": 2.642,
+      "change_5d_pct": 4.627,
+      "change_30d_pct": -8.07,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "HIMS",
+      "name": "Hims & Hers",
+      "alias": "HIMS",
+      "price": 30.24,
+      "change_pct": 3.032,
+      "change_5d_pct": 8.582,
+      "change_30d_pct": -2.703,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "COPX",
+      "name": "Copper Miners ETF",
+      "alias": "COPX",
+      "price": 88.525,
+      "change_pct": 1.183,
+      "change_5d_pct": 4.652,
+      "change_30d_pct": -6.352,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "CELH",
+      "name": "Celsius",
+      "alias": "CELH",
+      "price": 29.515,
+      "change_pct": 5.335,
+      "change_5d_pct": 6.822,
+      "change_30d_pct": -15.744,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "SPCX",
+      "name": "SPAC & New Issue ETF",
+      "alias": "SPCX",
+      "price": 154.635,
+      "change_pct": 1.834,
+      "change_5d_pct": 7.767,
+      "change_30d_pct": 14.544,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    }
+  ],
+  "stocks_summary": {
+    "change_pct": 2.805,
+    "change_5d_pct": 6.49,
+    "change_30d_pct": -3.665,
+    "premarket_pct": null,
+    "count": 5,
+    "label": "Stocks-Basket (gleichgewichtet)"
+  }
+}

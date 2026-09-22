@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Trading Dashboard — Sven</title>
+  <!-- grid:2-mobile -->
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #141a22;
+      --border: #243041;
+      --text: #e8eef7;
+      --muted: #8b9bb0;
+      --green: #22c55e;
+      --red: #ef4444;
+      --accent: #38bdf8;
+      --warn: #fbbf24;
+      --xrp: #a78bfa;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 103%; } /* etwas grösser, Mittelweg */
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 14px 48px; }
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(11, 15, 20, 0.96);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding-top: 10px; margin: 0 -14px 8px; padding-left: 14px; padding-right: 14px;
+    }
+    header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: nowrap; padding-bottom: 6px; }
+    h1 { font-size: 1.2rem; margin: 0; letter-spacing: 0.02em; white-space: nowrap; min-width: 0; }
+    .ts { color: var(--muted); font-size: 0.82rem; white-space: nowrap; flex-shrink: 0; }
+    nav { display: flex; gap: 6px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 6px 0 10px; scrollbar-width: none; }
+    nav::-webkit-scrollbar { display: none; }
+    nav a {
+      flex: 0 0 auto; color: var(--muted); text-decoration: none; font-size: 0.78rem; font-weight: 600;
+      padding: 5px 10px; border-radius: 999px; border: 1px solid var(--border); white-space: nowrap;
+    }
+    nav a:hover, nav a:focus { color: var(--text); border-color: var(--accent); outline: none; }
+
+    section { scroll-margin-top: 118px; }
+    h2 { font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--accent); margin: 22px 0 10px; }
+    .section-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px; margin: 22px 0 10px; flex-wrap: nowrap;
+    }
+    .section-head h2 { margin: 0; }
+    .ov-legend {
+      display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+      font-size: 0.76rem; color: var(--muted); white-space: nowrap;
+    }
+    .ov-legend .leg { display: inline-flex; align-items: center; gap: 5px; }
+    h3 { font-size: 0.95rem; margin: 0 0 10px; font-weight: 700; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+
+    /* Mobile-first: 2 tiles; desktop 4 */
+    .overview-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; margin-bottom: 11px; }
+    @media (min-width: 720px) { .overview-grid { grid-template-columns: repeat(4, 1fr); gap: 7px; } }
+
+    .ov-section { margin-bottom: 14px; }
+    .ov-section-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px; margin: 0 0 8px; flex-wrap: nowrap;
+    }
+    .ov-section-head h3 { margin: 0; }
+    .stocks-gesamt {
+      display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+      margin: -2px 0 8px; font-size: 0.77rem; color: var(--muted);
+      line-height: 1.35;
+    }
+    .stocks-gesamt .gesamt-label {
+      font-weight: 800; letter-spacing: 0.05em; color: var(--text);
+      text-transform: uppercase; font-size: 0.75rem;
+    }
+    .stocks-gesamt .up { color: var(--green); font-weight: 700; }
+    .stocks-gesamt .down { color: var(--red); font-weight: 700; }
+    .ov-section h3 {
+      font-size: 0.83rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--muted); margin: 0 0 8px; font-weight: 700;
+    }
+    .ov-range { font-size: 0.67rem; margin-top: 4px; color: var(--muted); line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .ov-range .up { color: var(--green); } .ov-range .down { color: var(--red); }
+
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+      display: inline-block;
+    }
+    .dot.open { background: #22c55e; box-shadow: 0 0 0 2px rgba(34,197,94,0.25); }
+    .dot.closed { background: #38bdf8; box-shadow: 0 0 0 2px rgba(56,189,248,0.25); }
+    .pre-row { font-size: 0.77rem; margin-top: 3px; color: var(--muted); }
+    .pre-row .pre-label { color: #fb923c; font-weight: 400; }
+
+    .ov-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 9px; min-width: 0; }
+    .ov-title-row {
+      display: flex; flex-direction: row; align-items: baseline; gap: 5px; min-width: 0;
+      white-space: nowrap; overflow: hidden;
+    }
+    .ov-item .name {
+      flex: 0 0 auto; font-size: 0.88rem; font-weight: 700; color: var(--text);
+      white-space: nowrap; overflow: visible; text-overflow: clip; line-height: 1.2;
+      display: inline;
+    }
+    .ov-item .desc {
+      flex: 1 1 auto; font-size: 0.6rem; color: var(--muted); font-weight: 500;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2;
+      min-width: 0; display: inline;
+    }
+
+    /* Kurs · % · Punkt — hintereinander, gleicher Abstand; Punkt nicht rechts */
+    .px-row {
+      display: flex; align-items: baseline; gap: 0; margin-top: 2px;
+      min-width: 0; white-space: nowrap;
+    }
+    .px-row .px {
+      font-variant-numeric: tabular-nums; font-size: 1.12rem; font-weight: 700;
+      flex: 0 0 auto; margin-right: 0.75em;
+    }
+    .px-row .pct {
+      font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.96rem;
+      flex: 0 0 auto; min-width: 0; text-align: left; margin: 0 0.75em 0 0;
+    }
+    .px-row .dot { margin-left: 0; align-self: center; flex: 0 0 auto; }
+
+    .ov-item .tv-open {
+      display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 700;
+      color: var(--accent); text-decoration: none; border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px 8px;
+    }
+    .ov-item .tv-open:hover { border-color: var(--accent); color: var(--text); }
+    .tv-overview { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 10px; }
+    .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .row:last-child { border-bottom: none; padding-bottom: 0; }
+    .row:first-child { padding-top: 0; }
+    .name { font-weight: 600; }
+    .alias { color: var(--muted); font-size: 0.8rem; margin-left: 6px; font-weight: 500; }
+    .alias.xrp { color: var(--xrp); }
+    .price { font-variant-numeric: tabular-nums; text-align: right; }
+    .pct { font-weight: 700; font-variant-numeric: tabular-nums; }
+    .up { color: var(--green); } .down { color: var(--red); }
+    .note { color: var(--muted); font-size: 0.78rem; margin-top: 2px; }
+    .cal-item, .pol-item, .fj-item { padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .cal-item:last-child, .pol-item:last-child, .fj-item:last-child { border-bottom: none; }
+    .time { color: var(--warn); font-weight: 600; font-size: 0.85rem; }
+    .impact { color: var(--muted); font-size: 0.75rem; }
+    .fj-item a { color: var(--text); text-decoration: none; }
+    .fj-item a:hover { color: var(--accent); }
+    .pol-item a { color: var(--text); text-decoration: none; }
+    .pol-item a:hover { color: var(--accent); }
+    .chart-card { padding-bottom: 8px; }
+    .tv-wrap { width: 100%; height: 420px; border-radius: 8px; overflow: hidden; background: #0d131a; }
+    .tv-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .sources { color: var(--muted); font-size: 0.75rem; margin-top: 24px; scroll-margin-top: 118px; }
+    .sources ul { padding-left: 1.1rem; margin: 6px 0 0; }
+    p { margin: 0; }
+    .lede { color: var(--muted); font-size: 0.88rem; }
+    .badge {
+      display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+      text-transform: uppercase; padding: 2px 7px; border-radius: 999px;
+      background: rgba(167,139,250,0.15); color: var(--xrp); border: 1px solid rgba(167,139,250,0.35);
+      margin-left: 6px; vertical-align: middle;
+    }
+    .fj-link { font-size: 0.8rem; color: var(--accent); text-decoration: none; margin-left: 8px; }
+    .tv-actions { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; align-items:center; }
+    .tv-btn {
+      appearance:none; border:1px solid var(--accent); background:rgba(56,189,248,0.12);
+      color:var(--accent); font-weight:700; font-size:0.85rem; padding:8px 14px;
+      border-radius:999px; cursor:pointer; text-decoration:none; display:inline-block;
+    }
+    .tv-btn:hover { background:rgba(56,189,248,0.22); color:var(--text); }
+    .tv-btn.secondary { border-color:var(--border); background:transparent; color:var(--muted); font-weight:600; font-size:0.78rem; padding:5px 10px; }
+    .tv-btn.secondary:hover { border-color:var(--accent); color:var(--text); }
+    .chart-head { display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+    .chart-head h3 { margin:0; }
+
+    @media (max-width: 720px) {
+      nav { display: none; }
+      .ov-item { padding: 9px 7px; border-radius: 12px; }
+      /* Mittelweg — lesbar bei 2 Spalten, nicht zu gross */
+      .ov-item .name { font-size: 0.88rem; }
+      .ov-item .desc { font-size: 0.6rem; }
+      .px-row .px { font-size: 1.12rem; }
+      .px-row .pct { font-size: 0.96rem; }
+      .dot { width: 8px; height: 8px; }
+      .pre-row { font-size: 0.77rem; }
+      .ov-range { font-size: 0.67rem; }
+      .stocks-gesamt { font-size: 0.77rem; gap: 8px; }
+      .ov-legend { font-size: 0.68rem; gap: 8px; }
+      .overview-grid { gap: 7px; }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <header>
+        <h1>Trading Dashboard</h1>
+        <div class="ts" id="ts"></div>
+      </header>
+      <nav aria-label="Sprungmarken">
+        <a href="#uebersicht">Übersicht</a>
+        <a href="#fj">FJ News</a>
+        <a href="#charts">Charts</a>
+        <a href="#asia">Asia</a>
+        <a href="#london">London</a>
+        <a href="#futures">Futures</a>
+        <a href="#kalender">Kalender</a>
+        <a href="#politik">Politik</a>
+      </nav>
+    </div>
+
+    <section id="uebersicht">
+      <div class="section-head">
+        <h2>Übersicht</h2>
+        <div class="ov-legend" aria-label="Legende">
+          <span class="leg"><span class="dot closed"></span> Kurs letzter Handelstag</span>
+          <span class="leg"><span class="dot open"></span> Börse offen</span>
+        </div>
+      </div>
+      <div id="overview"></div>
+      <div class="card"><p class="lede" id="overview-lede"></p></div>
+    </section>
+
+    <section id="fj">
+      <h2>Financial Juice <a class="fj-link" href="https://www.financialjuice.com/home" target="_blank" rel="noopener">Live →</a></h2>
+      <div class="card" id="fj-list"></div>
+    </section>
+
+    <section id="charts">
+      <h2>Charts · XRP &amp; BTC</h2>
+      <div class="card chart-card">
+        <div class="chart-head">
+          <h3>XRP <span class="alias">CRYPTO:XRPUSD · 15m</span><span class="badge">Haupt</span></h3>
+        </div>
+        <div class="tv-wrap" id="tv-xrp"><iframe title="TradingView CRYPTO:XRPUSD" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_CRYPTO_XRPUSD&amp;symbol=CRYPTO%3AXRPUSD&amp;interval=15&amp;hidesidetoolbar=0&amp;hidetoptoolbar=0&amp;symboledit=0&amp;saveimage=0&amp;toolbarbg=141a22&amp;studies=%5B%5D&amp;theme=dark&amp;style=1&amp;timezone=Europe%2FZurich&amp;withdateranges=1&amp;hideideas=1&amp;locale=de_DE" style="width:100%;height:420px;border:0;border-radius:8px;display:block;" allowtransparency="true" scrolling="no" allowfullscreen></iframe></div>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-head">
+          <h3>BTC <span class="alias">CRYPTO:BTCUSD · 15m</span></h3>
+        </div>
+        <div class="tv-wrap" id="tv-btc"><iframe title="TradingView CRYPTO:BTCUSD" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_CRYPTO_BTCUSD&amp;symbol=CRYPTO%3ABTCUSD&amp;interval=15&amp;hidesidetoolbar=0&amp;hidetoptoolbar=0&amp;symboledit=0&amp;saveimage=0&amp;toolbarbg=141a22&amp;studies=%5B%5D&amp;theme=dark&amp;style=1&amp;timezone=Europe%2FZurich&amp;withdateranges=1&amp;hideideas=1&amp;locale=de_DE" style="width:100%;height:420px;border:0;border-radius:8px;display:block;" allowtransparency="true" scrolling="no" allowfullscreen></iframe></div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section id="asia">
+      <h2>Asia-Schluss / Overnight</h2>
+      <div class="card"><p id="asia-text"></p></div>
+    </section>
+
+    <section id="london">
+      <h2>London-Setup</h2>
+      <div class="card"><p id="london-text"></p></div>
+    </section>
+
+    <section id="futures">
+      <h2>Futures</h2>
+      <div class="card" id="futures-list"></div>
+    </section>
+
+    <section id="kalender">
+      <h2>Kalender</h2>
+      <div class="card" id="calendar"></div>
+    </section>
+
+    <section id="politik">
+      <h2>Politik</h2>
+      <div class="card" id="politics"></div>
+    </section>
+
+    <div class="sources" id="quellen">
+      <strong>Quellen</strong>
+      <ul id="sources"></ul>
+    </div>
+  </div>
+
+  <script id="data" type="application/json">
+{
+  "updated_at": "2026-09-22T16:57:59+02:00",
+  "updated_at_label": "22.09.2026, 16:57 MESZ",
+  "futures": [
+    {
+      "symbol": "NQ=F",
+      "name": "Nasdaq-100 Micro",
+      "alias": "MNQ/NQ",
+      "price": 30918.0,
+      "change_pct": 0.433,
+      "change_5d_pct": 6.779,
+      "change_30d_pct": 6.226,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "ES=F",
+      "name": "S&P 500 Micro",
+      "alias": "MES/ES",
+      "price": 7830.25,
+      "change_pct": -0.041,
+      "change_5d_pct": 3.176,
+      "change_30d_pct": 2.093,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "GC=F",
+      "name": "Gold",
+      "alias": "GC",
+      "price": 4357.3,
+      "change_pct": -0.607,
+      "change_5d_pct": 0.565,
+      "change_30d_pct": -7.248,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "CL=F",
+      "name": "Rohöl (WTI)",
+      "alias": "CL",
+      "price": 91.2,
+      "change_pct": -1.267,
+      "change_5d_pct": -13.824,
+      "change_30d_pct": 7.281,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    }
+  ],
+  "calendar": [
+    {
+      "time_cest": "14:15",
+      "event": "ADP Employment Change (weekly)",
+      "impact": "hoch"
+    },
+    {
+      "time_cest": "16:00",
+      "event": "Richmond Fed Manufacturing & Services (Sep)",
+      "impact": "mittel"
+    },
+    {
+      "time_cest": "16:05–16:20",
+      "event": "Fed Williams (NY, Voter) + Fed Jefferson (Vice Chair) Speeches",
+      "impact": "hoch"
+    },
+    {
+      "time_cest": "19:00",
+      "event": "US 2y Note Auction ($69B) + Fed Barkin Rede",
+      "impact": "mittel"
+    },
+    {
+      "time_cest": "22:30",
+      "event": "API Crude Oil Inventories",
+      "impact": "mittel (Öl)"
+    }
+  ],
+  "politics": [
+    "Trump–Xi-Gipfel Do 24.09. im Weissen Haus: Fokus Trade-Truce-Verlängerung, AI, Critical Minerals",
+    "Trump signalisiert Offenheit für Treffen mit Irans Präsident Pezeshkian (UNGA NY) — Öl-Narrativ",
+    "US–China-Wochenendgespräche: AI-Dialog-Kanal vorgeschlagen (Bessent); positives Vorzeichen für Summit",
+    "Trump gestern NYC: Treffen mit Mayor Mamdani; UN-Woche läuft",
+    "USA plant Wiedereröffnung Militärbasis Süd-Grönland (FJ)"
+  ],
+  "crypto": [
+    {
+      "symbol": "XRP-USD",
+      "name": "XRP",
+      "alias": "XRP",
+      "price": 1.5574,
+      "change_pct": 4.049,
+      "change_5d_pct": 20.182,
+      "change_30d_pct": 6.4,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "alias": "BTC",
+      "price": 86075.38,
+      "change_pct": 0.283,
+      "change_5d_pct": 12.659,
+      "change_30d_pct": 11.665,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    }
+  ],
+  "asia_wrap": "Risk-on nach Nasdaq-Rekordschluss Mo: AI/Semis (AMD >$1T) tragen NQ; Asien/Overnight halten NQ knapp grün, ES flat. Gold leicht weicher, Öl weiter unter Druck (−2.7% vs Mo). 10y wieder unter 5% stützt Duration/Tech.",
+  "london_setup": "London: Bias vorsichtig risk-on in Equities solange NQ ATH-Zone hält. Fokus ADP 14:15 und Fed-Speak Williams/Jefferson 16:05–16:20 CEST — nach jüngstem Hike ist Ton entscheidend. Öl-Schwäche weiter beobachten (API 22:30). Politik: Trump–Xi Do und Iran/UNGA-Diplomatie als Vol-Treiber.",
+  "takeaway": "Equities fest (NQ ATH-Nähe), Crypto stark (XRP/BTC +5–6%), Öl weiter abverkauft, Gold ruhig. Bias long MNQ solange Futures halten — Fed-Speak + ADP als Intraday-Risiko; Do Trump–Xi Event-Risk.",
+  "sources": [
+    "Yahoo Finance CME Futures (NQ=F, ES=F, GC=F, CL=F)",
+    "Yahoo Finance Crypto (XRP-USD, BTC-USD)",
+    "FinancialJuice RSS (feed.ashx?xy=rss)",
+    "US economic calendar 22.09.2026 (ADP, Richmond Fed, Fed speakers, 2y auction, API)",
+    "Reuters / market wires: Trump–Xi, Iran/UNGA, US–China AI talks"
+  ],
+  "financialjuice": [
+    {
+      "time": "16:35",
+      "title": "EU Envoys agree to renew Russia sanctions on nearly 3,000 companies and individuals for 3 years, not the usual 6 months - EU Diplomats.",
+      "link": "https://www.financialjuice.com/News/9773826/EU-Envoys-agree-to-renew-Russia-sanctions-on-nearly-3000-companies-and-individuals-for-3-years-not-the-usual-6-months---EU-Diplomats.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "16:17",
+      "title": "Fed's Jefferson: The discount window is shock absorber during market stress, supports functioning of short-term funding markets, treasury liquidity.",
+      "link": "https://www.financialjuice.com/News/9773791/Feds-Jefferson-The-discount-window-is-shock-absorber-during-market-stress-supports-functioning-of-short-term-funding-markets-treasury-liquidity.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "14:35",
+      "title": "Trump's UN speech to make the case for how he uses America's power to confront Iran, cartel violence and other threats, reshaping the world to help the US - White House official tells Fox News",
+      "link": "https://www.financialjuice.com/News/9773614/Trumps-UN-speech-to-make-the-case-for-how-he-uses-Americas-power-to-confront-Iran-cartel-violence-and-other-threats-reshaping-the-world-to-help-the-US---White-House-official-tells-Fox-News.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "14:10",
+      "title": "China's Xi unlikely to bring business delegation to meeting with trump - WSJ citing Sources",
+      "link": "https://www.financialjuice.com/News/9773572/Chinas-Xi-unlikely-to-bring-business-delegation-to-meeting-with-trump---WSJ-citing-Sources.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "13:43",
+      "title": "US Secretary of State Rubio: Majority of oil price increases due to Yemen and Ukraine",
+      "link": "https://www.financialjuice.com/News/9773525/US-Secretary-of-State-Rubio-Majority-of-oil-price-increases-due-to-Yemen-and-Ukraine.aspx?xy=rss",
+      "source": "FinancialJuice"
+    }
+  ],
+  "financialjuice_url": "https://www.financialjuice.com/home",
+  "financialjuice_note": "Top 5 · letzte ~24h · auto alle 15 Min",
+  "stocks": [
+    {
+      "symbol": "ONDS",
+      "name": "Ondas Holdings",
+      "alias": "ONDS",
+      "price": 7.575,
+      "change_pct": 2.642,
+      "change_5d_pct": 4.627,
+      "change_30d_pct": -8.07,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "HIMS",
+      "name": "Hims & Hers",
+      "alias": "HIMS",
+      "price": 30.24,
+      "change_pct": 3.032,
+      "change_5d_pct": 8.582,
+      "change_30d_pct": -2.703,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "COPX",
+      "name": "Copper Miners ETF",
+      "alias": "COPX",
+      "price": 88.525,
+      "change_pct": 1.183,
+      "change_5d_pct": 4.652,
+      "change_30d_pct": -6.352,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "CELH",
+      "name": "Celsius",
+      "alias": "CELH",
+      "price": 29.515,
+      "change_pct": 5.335,
+      "change_5d_pct": 6.822,
+      "change_30d_pct": -15.744,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    },
+    {
+      "symbol": "SPCX",
+      "name": "SPAC & New Issue ETF",
+      "alias": "SPCX",
+      "price": 154.635,
+      "change_pct": 1.834,
+      "change_5d_pct": 7.767,
+      "change_30d_pct": 14.544,
+      "market_state": "REGULAR",
+      "market_open": true,
+      "premarket_pct": null,
+      "show_premarket": false
+    }
+  ],
+  "stocks_summary": {
+    "change_pct": 2.805,
+    "change_5d_pct": 6.49,
+    "change_30d_pct": -3.665,
+    "premarket_pct": null,
+    "count": 5,
+    "label": "Stocks-Basket (gleichgewichtet)"
+  }
+}
+  </script>
+  <script>
+    const data = JSON.parse(document.getElementById("data").textContent);
+
+    function fmtPrice(n, digits) {
+      if (n == null || n === "") return "—";
+      const num = Number(n);
+      if (!Number.isFinite(num)) return "—";
+      // Immer genau 2 Nachkommastellen (toFixed), Tausender mit ’ wie de-CH
+      const [intPart, frac] = Math.abs(num).toFixed(2).split(".");
+      const grouped = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, "’");
+      return (num < 0 ? "-" : "") + grouped + "." + frac;
+    }
+    function fmtPct(p) {
+      if (p == null || !Number.isFinite(Number(p))) return "—";
+      const num = Number(p);
+      const sign = num > 0 ? "+" : "";
+      return sign + num.toFixed(2) + "%";
+    }
+    function pctClass(p) {
+      if (p > 0) return "up";
+      if (p < 0) return "down";
+      return "";
+    }
+    function priceDigits(symbol) {
+      return 2; // alle Kurse: immer 2 Nachkommastellen
+    }
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+    function formatCalTime(t) {
+      if (!t) return "";
+      if (/cest|cet/i.test(t)) return t;
+      if (/^\s*~?\d/.test(t)) return t + " CEST";
+      return t;
+    }
+
+    document.getElementById("ts").textContent = "Kurse: " + (data.updated_at_label || data.updated_at);
+    document.getElementById("asia-text").textContent = data.asia_wrap || "";
+    document.getElementById("london-text").textContent = data.london_setup || "";
+    document.getElementById("overview-lede").textContent = data.takeaway || data.asia_wrap || "";
+
+    const OVERVIEW_SUB = {
+      "GC=F": "Gold",
+      "CL=F": "Rohöl (WTI)",
+      "NQ=F": "Nasdaq-100 Micro",
+      "ES=F": "S&P 500 Micro",
+      "XRP-USD": "XRP",
+      "BTC-USD": "Bitcoin",
+      "ONDS": "Ondas Holdings",
+      "HIMS": "Hims & Hers",
+      "COPX": "Copper Miners ETF",
+      "CELH": "Celsius",
+      "SPCX": "SPAC & New Issue ETF",
+    };
+
+    function fmtPctSigned(p) {
+      if (p == null || Number.isNaN(Number(p))) return "—";
+      return fmtPct(Number(p));
+    }
+
+    function shortTitle(f) {
+      // Prefer compact ticker/alias; never use long prose as title
+      const sym = String(f.symbol || "");
+      if (sym.endsWith("=F") || sym.includes("-USD")) {
+        // futures/crypto: alias if short, else name ticker part
+        const a = String(f.alias || "");
+        if (a && a.length <= 10 && a !== "Hauptposition") return a;
+        if (sym === "XRP-USD") return "XRP";
+        if (sym === "BTC-USD") return "BTC";
+        return a || f.name || sym;
+      }
+      // stocks: ticker
+      return f.alias || sym;
+    }
+
+    function shortDesc(f, title) {
+      let d = OVERVIEW_SUB[f.symbol] || f.name || "";
+      if (f.alias === "Hauptposition") d = "Hauptposition";
+      d = String(d || "").trim();
+      if (!d || d === title) return "";
+      // Titel nie kürzen; Beschreibung nur per CSS ellipsis wenn kein Platz
+      return d;
+    }
+
+    function renderOvItems(items) {
+      return (items || []).map(f => {
+        const digits = priceDigits(f.symbol);
+        const title = shortTitle(f);
+        const desc = shortDesc(f, title);
+        const tip = desc ? `${title} — ${desc}` : title;
+        const isOpen = !!f.market_open;
+        const dotCls = isOpen ? "open" : "closed";
+        const dotTitle = isOpen ? "Börse offen" : "Kurs letzter Handelstag";
+        // Vorbörse nur wenn Börse nicht offen und Pre-Daten da
+        const preHtml = (!isOpen && f.show_premarket)
+          ? `<div class="pre-row"><span class="pre-label">Vorbörse</span> <span class="${pctClass(f.premarket_pct)}">${fmtPctSigned(f.premarket_pct)}</span></div>`
+          : "";
+        return `<div class="ov-item">
+          <div class="ov-title-row" title="${esc(tip)}">
+            <span class="name">${esc(title)}</span>
+            ${desc ? `<span class="desc">${esc(desc)}</span>` : ""}
+          </div>
+          <div class="px-row">
+            <div class="px">${fmtPrice(f.price, digits)}</div>
+            <div class="pct ${pctClass(f.change_pct)}">${fmtPctSigned(f.change_pct)}</div>
+            <span class="dot ${dotCls}" title="${dotTitle}"></span>
+          </div>
+          ${preHtml}
+          <div class="ov-range">5T <span class="${pctClass(f.change_5d_pct)}">${fmtPctSigned(f.change_5d_pct)}</span> · 30T <span class="${pctClass(f.change_30d_pct)}">${fmtPctSigned(f.change_30d_pct)}</span></div>
+        </div>`;
+      }).join("");
+    }
+
+    function renderStocksGesamt(s) {
+      if (!s) return "";
+      return `<div class="stocks-gesamt" title="Gleichgewichteter Basket">
+        <span class="gesamt-label">Gesamt</span>
+        <span>Letzter Handelstag <span class="${pctClass(s.change_pct)}">${fmtPctSigned(s.change_pct)}</span></span>
+        <span>5T <span class="${pctClass(s.change_5d_pct)}">${fmtPctSigned(s.change_5d_pct)}</span></span>
+        <span>30T <span class="${pctClass(s.change_30d_pct)}">${fmtPctSigned(s.change_30d_pct)}</span></span>
+      </div>`;
+    }
+
+    const ovParts = [];
+    if ((data.futures || []).length) {
+      ovParts.push(`<div class="ov-section"><div class="ov-section-head"><h3>Futures</h3></div><div class="overview-grid">${renderOvItems(data.futures)}</div></div>`);
+    }
+    if ((data.stocks || []).length) {
+      ovParts.push(`<div class="ov-section"><h3>Stocks</h3>${renderStocksGesamt(data.stocks_summary)}<div class="overview-grid">${renderOvItems(data.stocks)}</div></div>`);
+    }
+    if ((data.crypto || []).length) {
+      ovParts.push(`<div class="ov-section"><div class="ov-section-head"><h3>Krypto</h3></div><div class="overview-grid">${renderOvItems(data.crypto)}</div></div>`);
+    }
+    document.getElementById("overview").innerHTML = ovParts.join("");
+
+    document.getElementById("fj-list").innerHTML = (data.financialjuice || []).length
+      ? (data.financialjuice || []).map(h => {
+          const title = esc(h.title);
+          const body = h.link
+            ? `<a href="${esc(h.link)}" target="_blank" rel="noopener">${title}</a>`
+            : title;
+          return `<div class="fj-item">
+            <div class="time">${esc(h.time)}</div>
+            <div>${body}</div>
+          </div>`;
+        }).join("")
+      : `<p class="lede">Keine Financial-Juice-Headlines geladen.</p>`;
+
+    document.getElementById("futures-list").innerHTML = (data.futures || []).map(f => {
+      const digits = priceDigits(f.symbol);
+      return `<div class="row">
+        <div>
+          <span class="name">${esc(f.name)}</span>
+          <span class="alias">${esc(f.alias || f.symbol)}</span>
+          ${f.note ? `<div class="note">${esc(f.note)}</div>` : ""}
+        </div>
+        <div class="price">
+          <div>${fmtPrice(f.price, digits)}</div>
+          <div class="pct ${pctClass(f.change_pct)}">${fmtPct(f.change_pct)}</div>
+        </div>
+      </div>`;
+    }).join("");
+
+    document.getElementById("calendar").innerHTML = (data.calendar || []).map(c =>
+      `<div class="cal-item">
+        <div class="time">${esc(formatCalTime(c.time_cest))}</div>
+        <div>${esc(c.event)}</div>
+        <div class="impact">Impact: ${esc(c.impact)}</div>
+      </div>`
+    ).join("");
+
+    document.getElementById("politics").innerHTML = (data.politics || []).map(p => {
+      const text = typeof p === "string" ? p : (p.text || p.title || "");
+      const url = (typeof p === "object" && p && p.url)
+        ? p.url
+        : `https://news.google.com/search?q=${encodeURIComponent(text)}&hl=de&gl=CH&ceid=CH:de`;
+      return `<div class="pol-item"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a></div>`;
+    }).join("");
+
+    document.getElementById("sources").innerHTML = (data.sources || []).map(s => `<li>${esc(s)}</li>`).join("");
+
+
+    // Charts: TradingView iframe embeds (work with file://)
+    </script>
+</body>
+</html>
