@@ -108,6 +108,10 @@
       white-space: nowrap; overflow: visible; text-overflow: clip; line-height: 1.2;
       display: inline;
     }
+    .ov-title-link {
+      color: inherit; text-decoration: none;
+    }
+    .ov-title-link:hover { color: var(--accent); }
     .ov-item .desc {
       flex: 1 1 auto; font-size: 0.6rem; color: var(--muted); font-weight: 500;
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2;
@@ -588,6 +592,24 @@
       return fmtPct(Number(p));
     }
 
+    function tvUrl(symbol) {
+      const map = {
+        "NQ=F": "CME_MINI:MNQ1!",
+        "ES=F": "CME_MINI:MES1!",
+        "GC=F": "COMEX:GC1!",
+        "CL=F": "NYMEX:CL1!",
+        "XRP-USD": "CRYPTO:XRPUSD",
+        "BTC-USD": "CRYPTO:BTCUSD",
+        "ONDS": "NASDAQ:ONDS",
+        "HIMS": "NYSE:HIMS",
+        "COPX": "AMEX:COPX",
+        "CELH": "NASDAQ:CELH",
+        "SPCX": "NASDAQ:SPCX",
+      };
+      const tv = map[String(symbol || "")] || String(symbol || "");
+      return "https://www.tradingview.com/chart/?symbol=" + encodeURIComponent(tv) + "&interval=15";
+    }
+
     function shortTitle(f) {
       // Prefer compact ticker/alias; never use long prose as title
       const sym = String(f.symbol || "");
@@ -627,7 +649,7 @@
           : "";
         return `<div class="ov-item">
           <div class="ov-title-row" title="${esc(tip)}">
-            <span class="name">${esc(title)}</span>
+            <span class="name"><a class="ov-title-link" href="${esc(tvUrl(f.symbol))}" target="_blank" rel="noopener">${esc(title)}</a></span>
             ${desc ? `<span class="desc">${esc(desc)}</span>` : ""}
           </div>
           <div class="px-row">
