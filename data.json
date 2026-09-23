@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-23T22:24:58+02:00",
-  "updated_at_label": "23.09.2026, 22:24 MESZ",
+  "updated_at": "2026-09-23T22:37:02+02:00",
+  "updated_at_label": "23.09.2026, 22:37 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30753.5,
-      "change_pct": -0.886,
-      "change_5d_pct": 6.18,
-      "change_30d_pct": 5.661,
+      "price": 30764.0,
+      "change_pct": -0.852,
+      "change_5d_pct": 6.216,
+      "change_30d_pct": 5.697,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7771.75,
-      "change_pct": -0.766,
-      "change_5d_pct": 2.849,
-      "change_30d_pct": 1.33,
+      "price": 7772.0,
+      "change_pct": -0.763,
+      "change_5d_pct": 2.852,
+      "change_30d_pct": 1.333,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4321.3,
-      "change_pct": -1.259,
-      "change_5d_pct": -1.509,
-      "change_30d_pct": -8.014,
+      "price": 4320.2,
+      "change_pct": -1.284,
+      "change_5d_pct": -1.534,
+      "change_30d_pct": -8.038,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 92.71,
-      "change_pct": 2.419,
-      "change_5d_pct": -9.489,
-      "change_30d_pct": 9.058,
+      "price": 92.85,
+      "change_pct": 2.574,
+      "change_5d_pct": -9.353,
+      "change_30d_pct": 9.222,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.4862,
-      "change_pct": -5.47,
-      "change_5d_pct": 6.45,
-      "change_30d_pct": -2.364,
+      "price": 1.4864,
+      "change_pct": -5.457,
+      "change_5d_pct": 6.464,
+      "change_30d_pct": -2.351,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 84280.39,
-      "change_pct": -2.325,
-      "change_5d_pct": 4.177,
-      "change_30d_pct": 8.392,
+      "price": 84299.6,
+      "change_pct": -2.303,
+      "change_5d_pct": 4.2,
+      "change_30d_pct": 8.417,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -131,31 +131,31 @@
     {
       "time": "20:48",
       "title": "US State Department: Rubio met with Indian counterpart, discussed sanctions that could be leveled against states that engage economically with Russia and Iran",
-      "link": "https://www.financialjuice.com/News/9775973/US-State-Department-Rubio-met-with-Indian-counterpart-discussed-sanctions-that-could-be-leveled-against-states-that-engage-economically-with-Russia-and-Iran.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9775973/US-State-Department-Rubio-met-with-Indian-counterpart-discussed-sanctions-that-could-be-leveled-against-states-that-engage-economically-with-Russia-and-Iran.aspx",
       "source": "FinancialJuice"
     },
     {
       "time": "20:40",
       "title": "Brent Crude futures settle at $103.08/bbl, up $3.83, 3.86%",
-      "link": "https://www.financialjuice.com/News/9775962/Brent-Crude-futures-settle-at-10308bbl-up-383-386.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9775962/Brent-Crude-futures-settle-at-10308bbl-up-383-386.aspx",
       "source": "FinancialJuice"
     },
     {
       "time": "18:03",
       "title": "Senators aim to fast-track Chinese vehicle ban legislation this week as China's Xi visits Washington - Document.",
-      "link": "https://www.financialjuice.com/News/9775777/Senators-aim-to-fast-track-Chinese-vehicle-ban-legislation-this-week-as-Chinas-Xi-visits-Washington---Document.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9775777/Senators-aim-to-fast-track-Chinese-vehicle-ban-legislation-this-week-as-Chinas-Xi-visits-Washington---Document.aspx",
       "source": "FinancialJuice"
     },
     {
       "time": "17:34",
       "title": "Fed's Goolsbee: That's what happened with tariffs, COVID; that's maybe what's happening with oil, we better be careful.",
-      "link": "https://www.financialjuice.com/News/9775733/Feds-Goolsbee-Thats-what-happened-with-tariffs-COVID-thats-maybe-whats-happening-with-oil-we-better-be-careful.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9775733/Feds-Goolsbee-Thats-what-happened-with-tariffs-COVID-thats-maybe-whats-happening-with-oil-we-better-be-careful.aspx",
       "source": "FinancialJuice"
     },
     {
       "time": "16:37",
       "title": "US State Dept: US Secretary of State Rubio and Lavrov discussed Russia-Ukraine war and US-Russia bilateral relationship",
-      "link": "https://www.financialjuice.com/News/9775632/US-State-Dept-US-Secretary-of-State-Rubio-and-Lavrov-discussed-Russia-Ukraine-war-and-US-Russia-bilateral-relationship.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9775632/US-State-Dept-US-Secretary-of-State-Rubio-and-Lavrov-discussed-Russia-Ukraine-war-and-US-Russia-bilateral-relationship.aspx",
       "source": "FinancialJuice"
     }
   ],
@@ -172,7 +172,7 @@
       "change_30d_pct": -10.194,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -4.016,
+      "premarket_pct": -4.014,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": -8.655,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -6.54,
+      "premarket_pct": -6.375,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -16.7,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -0.698,
+      "premarket_pct": -0.759,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 9.896,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -4.104,
+      "premarket_pct": -3.935,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": -3.787,
     "change_5d_pct": 1.736,
     "change_30d_pct": -6.717,
-    "premarket_pct": -3.756,
+    "premarket_pct": -3.701,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
