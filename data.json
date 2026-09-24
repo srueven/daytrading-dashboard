@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-24T13:51:19+02:00",
-  "updated_at_label": "24.09.2026, 13:51 MESZ",
+  "updated_at": "2026-09-24T14:07:36+02:00",
+  "updated_at_label": "24.09.2026, 14:07 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30450.25,
-      "change_pct": -1.022,
-      "change_5d_pct": 3.408,
-      "change_30d_pct": 4.619,
+      "price": 30437.5,
+      "change_pct": -1.064,
+      "change_5d_pct": 3.365,
+      "change_30d_pct": 4.576,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7727.0,
-      "change_pct": -0.585,
-      "change_5d_pct": 1.139,
-      "change_30d_pct": 0.746,
+      "price": 7726.0,
+      "change_pct": -0.598,
+      "change_5d_pct": 1.126,
+      "change_30d_pct": 0.733,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4294.8,
-      "change_pct": -0.547,
-      "change_5d_pct": -2.384,
-      "change_30d_pct": -8.578,
+      "price": 4295.2,
+      "change_pct": -0.537,
+      "change_5d_pct": -2.375,
+      "change_30d_pct": -8.57,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 93.65,
-      "change_pct": 1.617,
-      "change_5d_pct": -8.105,
-      "change_30d_pct": 10.164,
+      "price": 93.68,
+      "change_pct": 1.649,
+      "change_5d_pct": -8.076,
+      "change_30d_pct": 10.199,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.4701,
-      "change_pct": -6.524,
-      "change_5d_pct": 4.229,
-      "change_30d_pct": -0.605,
+      "price": 1.4689,
+      "change_pct": -6.236,
+      "change_5d_pct": 4.144,
+      "change_30d_pct": -0.686,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 83432.7,
-      "change_pct": -2.575,
-      "change_5d_pct": 2.707,
-      "change_30d_pct": 5.659,
+      "price": 83425.68,
+      "change_pct": -2.406,
+      "change_5d_pct": 2.698,
+      "change_30d_pct": 5.65,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -129,6 +129,12 @@
   ],
   "financialjuice": [
     {
+      "time": "13:55",
+      "title": "Iran's foreign minister Araqchi meets with Ukrainian counterpart in New York - Mehr News Agency",
+      "link": "https://www.financialjuice.com/News/9777278/Irans-foreign-minister-Araqchi-meets-with-Ukrainian-counterpart-in-New-York---Mehr-News-Agency.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
       "time": "13:25",
       "title": "Trump on Truth Social: A big day with President Xi of China. Super Intelligence (SI) will be a big topic of discussion, but I want to leave it exactly where it is. That is China’s position also.",
       "link": "https://www.financialjuice.com/News/9777230/Trump-on-Truth-Social-A-big-day-with-President-Xi-of-China-Super-Intelligence-SI-will-be-a-big-topic-of-discussion-but-I-want-to-leave-it-exactly-where-it-is-That-is-Chinas-position-also.aspx?xy=rss",
@@ -138,12 +144,6 @@
       "time": "13:14",
       "title": "Iraq is trucking around 250,000 bpd of Basra crude to Kirkuk for exports via Ceyhan in Turkey - Basra Oil Company head",
       "link": "https://www.financialjuice.com/News/9777219/Iraq-is-trucking-around-250000-bpd-of-Basra-crude-to-Kirkuk-for-exports-via-Ceyhan-in-Turkey---Basra-Oil-Company-head.aspx?xy=rss",
-      "source": "FinancialJuice"
-    },
-    {
-      "time": "13:14",
-      "title": "Saudi-led coalition in Yemen: Intercepted 6 ballistic missiles launched by Iran-backed Houthis",
-      "link": "https://www.financialjuice.com/News/9777218/Saudi-led-coalition-in-Yemen-Intercepted-6-ballistic-missiles-launched-by-Iran-backed-Houthis.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
@@ -172,7 +172,7 @@
       "change_30d_pct": -10.194,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -1.486,
+      "premarket_pct": -1.622,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": -8.655,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.76,
+      "premarket_pct": -0.318,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -16.7,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.206,
+      "premarket_pct": -0.296,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 9.896,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.081,
+      "premarket_pct": -0.303,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": -3.787,
     "change_5d_pct": 1.736,
     "change_30d_pct": -6.717,
-    "premarket_pct": -0.594,
+    "premarket_pct": -0.595,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
