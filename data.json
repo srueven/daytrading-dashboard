@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-29T22:07:05+02:00",
-  "updated_at_label": "29.09.2026, 22:07 MESZ",
+  "updated_at": "2026-09-29T22:27:40+02:00",
+  "updated_at_label": "29.09.2026, 22:27 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30606.0,
-      "change_pct": 0.13,
-      "change_5d_pct": -1.362,
-      "change_30d_pct": 3.703,
+      "price": 30629.25,
+      "change_pct": 0.206,
+      "change_5d_pct": -1.287,
+      "change_30d_pct": 3.782,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7728.75,
-      "change_pct": -0.232,
-      "change_5d_pct": -1.315,
-      "change_30d_pct": 0.386,
+      "price": 7734.75,
+      "change_pct": -0.155,
+      "change_5d_pct": -1.239,
+      "change_30d_pct": 0.464,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4207.7,
-      "change_pct": 0.943,
-      "change_5d_pct": -3.855,
-      "change_30d_pct": -6.11,
+      "price": 4205.0,
+      "change_pct": 0.878,
+      "change_5d_pct": -3.916,
+      "change_30d_pct": -6.17,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 89.21,
-      "change_pct": -3.661,
-      "change_5d_pct": -5.688,
-      "change_30d_pct": 4.023,
+      "price": 89.06,
+      "change_pct": -3.823,
+      "change_5d_pct": -5.846,
+      "change_30d_pct": 3.848,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.4958,
-      "change_pct": 0.094,
-      "change_5d_pct": -2.434,
-      "change_30d_pct": 7.093,
+      "price": 1.5002,
+      "change_pct": 0.388,
+      "change_5d_pct": -2.147,
+      "change_30d_pct": 7.408,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 83543.37,
-      "change_pct": 0.05,
-      "change_5d_pct": -0.99,
-      "change_30d_pct": 6.77,
+      "price": 83625.2,
+      "change_pct": 0.148,
+      "change_5d_pct": -0.893,
+      "change_30d_pct": 6.875,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -128,6 +128,12 @@
     "Reuters / market wires: Trump–Xi, Iran/UNGA, US–China AI talks"
   ],
   "financialjuice": [
+    {
+      "time": "22:25",
+      "title": "Al Mayadeen: The purpose of Netanyahu's visit to the UAE was to encourage Abu Dhabi to resume its participation in the war against Yemen.",
+      "link": "https://www.financialjuice.com/News/9784283/Al-Mayadeen-The-purpose-of-Netanyahus-visit-to-the-UAE-was-to-encourage-Abu-Dhabi-to-resume-its-participation-in-the-war-against-Yemen.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
     {
       "time": "22:05",
       "title": "Fed's Williams: I don't believe rising yields signal shifting longer-run inflation views.",
@@ -151,12 +157,6 @@
       "title": "Brent Crude futures settle at $102.59/bbl, down $2.69, 2.56%.",
       "link": "https://www.financialjuice.com/News/9784153/Brent-Crude-futures-settle-at-10259bbl-down-269-256.aspx?xy=rss",
       "source": "FinancialJuice"
-    },
-    {
-      "time": "20:28",
-      "title": "Sounds like this White House AI meeting is wrapping up... Pool says press has been called to gather for an event - Fox News reporter",
-      "link": "https://www.financialjuice.com/News/9784095/Sounds-like-this-White-House-AI-meeting-is-wrapping-up-Pool-says-press-has-been-called-to-gather-for-an-event---Fox-News-reporter.aspx?xy=rss",
-      "source": "FinancialJuice"
     }
   ],
   "financialjuice_url": "https://www.financialjuice.com/home",
@@ -172,7 +172,7 @@
       "change_30d_pct": -2.286,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -2.734,
+      "premarket_pct": -2.615,
       "show_premarket": true
     },
     {
@@ -185,20 +185,20 @@
       "change_30d_pct": -2.975,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -0.347,
+      "premarket_pct": -0.278,
       "show_premarket": true
     },
     {
       "symbol": "COPX",
       "name": "Copper Miners ETF",
       "alias": "COPX",
-      "price": 85.49,
-      "change_pct": 0.27,
-      "change_5d_pct": -4.99,
-      "change_30d_pct": -7.937,
+      "price": 85.48,
+      "change_pct": 0.258,
+      "change_5d_pct": -5.001,
+      "change_30d_pct": -7.947,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": 0.194,
+      "premarket_pct": 0.258,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -11.892,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -1.036,
+      "premarket_pct": -0.925,
       "show_premarket": true
     },
     {
@@ -224,15 +224,15 @@
       "change_30d_pct": 3.862,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": 2.564,
+      "premarket_pct": 2.647,
       "show_premarket": true
     }
   ],
   "stocks_summary": {
-    "change_pct": -0.211,
-    "change_5d_pct": -4.608,
-    "change_30d_pct": -4.246,
-    "premarket_pct": -0.272,
+    "change_pct": -0.214,
+    "change_5d_pct": -4.611,
+    "change_30d_pct": -4.248,
+    "premarket_pct": -0.183,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
