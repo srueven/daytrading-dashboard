@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-29T14:33:08+02:00",
-  "updated_at_label": "29.09.2026, 14:33 MESZ",
+  "updated_at": "2026-09-29T14:58:04+02:00",
+  "updated_at_label": "29.09.2026, 14:58 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30690.0,
-      "change_pct": 0.405,
-      "change_5d_pct": -1.091,
-      "change_30d_pct": 3.988,
+      "price": 30634.25,
+      "change_pct": 0.222,
+      "change_5d_pct": -1.271,
+      "change_30d_pct": 3.799,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7762.0,
-      "change_pct": 0.197,
-      "change_5d_pct": -0.891,
-      "change_30d_pct": 0.818,
+      "price": 7754.25,
+      "change_pct": 0.097,
+      "change_5d_pct": -0.99,
+      "change_30d_pct": 0.718,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4181.9,
-      "change_pct": 0.324,
-      "change_5d_pct": -4.608,
-      "change_30d_pct": -6.685,
+      "price": 4184.5,
+      "change_pct": 0.386,
+      "change_5d_pct": -4.385,
+      "change_30d_pct": -6.627,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 90.85,
-      "change_pct": -1.89,
-      "change_5d_pct": -3.954,
-      "change_30d_pct": 5.935,
+      "price": 90.66,
+      "change_pct": -2.095,
+      "change_5d_pct": -4.155,
+      "change_30d_pct": 5.714,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.5174,
-      "change_pct": -0.407,
-      "change_5d_pct": -1.025,
-      "change_30d_pct": 8.639,
+      "price": 1.5482,
+      "change_pct": 1.615,
+      "change_5d_pct": 0.984,
+      "change_30d_pct": 10.844,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 84235.53,
-      "change_pct": 0.808,
-      "change_5d_pct": -0.17,
-      "change_30d_pct": 7.655,
+      "price": 84325.51,
+      "change_pct": 0.916,
+      "change_5d_pct": -0.063,
+      "change_30d_pct": 7.77,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -131,31 +131,31 @@
     {
       "time": "14:09",
       "title": "ECB's Escriva: Spain is not considering moving gold reserves.",
-      "link": "https://www.financialjuice.com/News/9783455/ECBs-Escriva-Spain-is-not-considering-moving-gold-reserves.aspx",
+      "link": "https://www.financialjuice.com/News/9783455/ECBs-Escriva-Spain-is-not-considering-moving-gold-reserves.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
       "time": "13:53",
       "title": "ECB's Escriva: High energy prices might anchor in inflation.",
-      "link": "https://www.financialjuice.com/News/9783439/ECBs-Escriva-High-energy-prices-might-anchor-in-inflation.aspx",
+      "link": "https://www.financialjuice.com/News/9783439/ECBs-Escriva-High-energy-prices-might-anchor-in-inflation.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
       "time": "13:49",
       "title": "ECB’s Escriva: This can add pressure to interest rates.",
-      "link": "https://www.financialjuice.com/News/9783435/ECBs-Escriva-This-can-add-pressure-to-interest-rates.aspx",
+      "link": "https://www.financialjuice.com/News/9783435/ECBs-Escriva-This-can-add-pressure-to-interest-rates.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
       "time": "10:28",
       "title": "ECB's Kazimir: Rate hike was unavoidable.",
-      "link": "https://www.financialjuice.com/News/9783128/ECBs-Kazimir-Rate-hike-was-unavoidable.aspx",
+      "link": "https://www.financialjuice.com/News/9783128/ECBs-Kazimir-Rate-hike-was-unavoidable.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
       "time": "09:39",
       "title": "Iran's Parliament Speaker Qalibaf: No one in the region shall sell its oil if Iran cannot sell its oil, if Iran has no security then no regional infrastructure shall be safe - State Media",
-      "link": "https://www.financialjuice.com/News/9783073/Irans-Parliament-Speaker-Qalibaf-No-one-in-the-region-shall-sell-its-oil-if-Iran-cannot-sell-its-oil-if-Iran-has-no-security-then-no-regional-infrastructure-shall-be-safe---State-Media.aspx",
+      "link": "https://www.financialjuice.com/News/9783073/Irans-Parliament-Speaker-Qalibaf-No-one-in-the-region-shall-sell-its-oil-if-Iran-cannot-sell-its-oil-if-Iran-has-no-security-then-no-regional-infrastructure-shall-be-safe---State-Media.aspx?xy=rss",
       "source": "FinancialJuice"
     }
   ],
@@ -172,7 +172,7 @@
       "change_30d_pct": 0.327,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 1.823,
+      "premarket_pct": 2.995,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": -2.705,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.764,
+      "premarket_pct": 1.007,
       "show_premarket": true
     },
     {
@@ -198,7 +198,7 @@
       "change_30d_pct": -8.184,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.827,
+      "premarket_pct": 0.703,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -10.97,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.532,
+      "premarket_pct": 0.53,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 1.239,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.983,
+      "premarket_pct": 0.976,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": -1.094,
     "change_5d_pct": -0.94,
     "change_30d_pct": -4.059,
-    "premarket_pct": 0.986,
+    "premarket_pct": 1.242,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
