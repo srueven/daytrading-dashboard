@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-30T13:54:32+02:00",
-  "updated_at_label": "30.09.2026, 13:54 MESZ",
+  "updated_at": "2026-09-30T14:08:51+02:00",
+  "updated_at_label": "30.09.2026, 14:08 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30586.5,
-      "change_pct": -0.087,
-      "change_5d_pct": -0.579,
-      "change_30d_pct": 3.637,
+      "price": 30576.25,
+      "change_pct": -0.121,
+      "change_5d_pct": -0.613,
+      "change_30d_pct": 3.603,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7732.5,
-      "change_pct": 0.006,
-      "change_5d_pct": -0.515,
-      "change_30d_pct": 0.435,
+      "price": 7733.5,
+      "change_pct": 0.019,
+      "change_5d_pct": -0.502,
+      "change_30d_pct": 0.448,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4218.4,
-      "change_pct": 0.926,
-      "change_5d_pct": -2.316,
-      "change_30d_pct": -5.871,
+      "price": 4216.9,
+      "change_pct": 0.89,
+      "change_5d_pct": -2.35,
+      "change_30d_pct": -5.904,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 90.73,
-      "change_pct": 1.51,
-      "change_5d_pct": -1.552,
-      "change_30d_pct": 5.795,
+      "price": 90.76,
+      "change_pct": 1.544,
+      "change_5d_pct": -1.519,
+      "change_30d_pct": 5.83,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.5142,
-      "change_pct": -0.165,
-      "change_5d_pct": -3.457,
-      "change_30d_pct": 11.379,
+      "price": 1.5116,
+      "change_pct": -2.295,
+      "change_5d_pct": -3.622,
+      "change_30d_pct": 11.188,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 83797.82,
-      "change_pct": -0.624,
-      "change_5d_pct": -0.282,
-      "change_30d_pct": 7.893,
+      "price": 83761.11,
+      "change_pct": -0.65,
+      "change_5d_pct": -0.326,
+      "change_30d_pct": 7.846,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -129,6 +129,12 @@
   ],
   "financialjuice": [
     {
+      "time": "14:00",
+      "title": "German CPI MoM Prelim Actual 0.6% (Forecast 0.5%, Previous 0.20%)",
+      "link": "https://www.financialjuice.com/News/9785472/German-CPI-MoM-Prelim--Actual-06-Forecast-05-Previous-020.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
       "time": "13:51",
       "title": "Explosion heard in IRAN'S southeastern city of Zahedan, source of detonation unknown - Fars News.",
       "link": "https://www.financialjuice.com/News/9785468/Explosion-heard-in-IRANS-southeastern-city-of-Zahedan-source-of-detonation-unknown---Fars-News.aspx?xy=rss",
@@ -138,12 +144,6 @@
       "time": "13:31",
       "title": "Poll: Brent crude oil projected to average $89.05 a barrel in 2026 versus $85.08 forecast in August",
       "link": "https://www.financialjuice.com/News/9785440/Poll-Brent-crude-oil-projected-to-average-8905-a-barrel-in-2026-versus-8508-forecast-in-August.aspx?xy=rss",
-      "source": "FinancialJuice"
-    },
-    {
-      "time": "11:01",
-      "title": "Italian CPI MoM Prelim Actual 0.7% (Forecast 0.3%, Previous 0.5%)",
-      "link": "https://www.financialjuice.com/News/9785205/Italian-CPI-MoM-Prelim-Actual-07-Forecast-03-Previous-05.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
@@ -172,7 +172,7 @@
       "change_30d_pct": -2.286,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.265,
+      "premarket_pct": -0.134,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": -2.975,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.453,
+      "premarket_pct": -0.032,
       "show_premarket": true
     },
     {
@@ -198,7 +198,7 @@
       "change_30d_pct": -7.947,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.14,
+      "premarket_pct": 0.304,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -11.892,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.397,
+      "premarket_pct": -0.296,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 3.862,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.04,
+      "premarket_pct": -0.084,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": -0.214,
     "change_5d_pct": -4.611,
     "change_30d_pct": -4.248,
-    "premarket_pct": -0.203,
+    "premarket_pct": -0.048,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
