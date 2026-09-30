@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-30T14:36:13+02:00",
-  "updated_at_label": "30.09.2026, 14:36 MESZ",
+  "updated_at": "2026-09-30T15:00:06+02:00",
+  "updated_at_label": "30.09.2026, 15:00 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30592.0,
-      "change_pct": -0.069,
-      "change_5d_pct": -0.562,
-      "change_30d_pct": 3.656,
+      "price": 30696.25,
+      "change_pct": 0.271,
+      "change_5d_pct": -0.223,
+      "change_30d_pct": 4.009,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7738.0,
-      "change_pct": 0.078,
-      "change_5d_pct": -0.444,
-      "change_30d_pct": 0.507,
+      "price": 7754.5,
+      "change_pct": 0.291,
+      "change_5d_pct": -0.232,
+      "change_30d_pct": 0.721,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4221.6,
-      "change_pct": 1.002,
-      "change_5d_pct": -2.242,
-      "change_30d_pct": -5.799,
+      "price": 4242.3,
+      "change_pct": 1.498,
+      "change_5d_pct": -1.762,
+      "change_30d_pct": -5.337,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 90.36,
-      "change_pct": 1.096,
-      "change_5d_pct": -1.953,
-      "change_30d_pct": 5.364,
+      "price": 90.68,
+      "change_pct": 1.454,
+      "change_5d_pct": -1.606,
+      "change_30d_pct": 5.737,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.5303,
-      "change_pct": -1.086,
-      "change_5d_pct": -2.43,
-      "change_30d_pct": 12.564,
+      "price": 1.535,
+      "change_pct": -0.782,
+      "change_5d_pct": -2.13,
+      "change_30d_pct": 12.909,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 84666.82,
-      "change_pct": 0.425,
-      "change_5d_pct": 0.752,
-      "change_30d_pct": 9.012,
+      "price": 85300.19,
+      "change_pct": 1.176,
+      "change_5d_pct": 1.506,
+      "change_30d_pct": 9.827,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -128,6 +128,12 @@
     "Reuters / market wires: Trump–Xi, Iran/UNGA, US–China AI talks"
   ],
   "financialjuice": [
+    {
+      "time": "14:38",
+      "title": "Traders pare bets on October Fed rate hike after PCE report",
+      "link": "https://www.financialjuice.com/News/9785572/Traders-pare-bets-on-October-Fed-rate-hike-after-PCE-report.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
     {
       "time": "14:16",
       "title": "France’s President Macron: Trade war with china, cutting ties would make no sense.",
@@ -151,12 +157,6 @@
       "title": "Poll: Brent crude oil projected to average $89.05 a barrel in 2026 versus $85.08 forecast in August",
       "link": "https://www.financialjuice.com/News/9785440/Poll-Brent-crude-oil-projected-to-average-8905-a-barrel-in-2026-versus-8508-forecast-in-August.aspx?xy=rss",
       "source": "FinancialJuice"
-    },
-    {
-      "time": "08:24",
-      "title": "Fed Interest Rate Probabilities",
-      "link": "https://www.financialjuice.com/News/9784966/Fed-Interest-Rate-Probabilities.aspx?xy=rss",
-      "source": "FinancialJuice"
     }
   ],
   "financialjuice_url": "https://www.financialjuice.com/home",
@@ -172,7 +172,7 @@
       "change_30d_pct": -2.286,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 1.337,
+      "premarket_pct": 1.23,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": -2.975,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.278,
+      "premarket_pct": 0.691,
       "show_premarket": true
     },
     {
@@ -198,7 +198,7 @@
       "change_30d_pct": -7.947,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 1.752,
+      "premarket_pct": 1.234,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -11.892,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 1.047,
+      "premarket_pct": 1.227,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 3.862,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.147,
+      "premarket_pct": 0.174,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": -0.214,
     "change_5d_pct": -4.611,
     "change_30d_pct": -4.248,
-    "premarket_pct": 0.912,
+    "premarket_pct": 0.911,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
