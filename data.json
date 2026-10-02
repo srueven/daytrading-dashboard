@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-01T22:56:28+02:00",
-  "updated_at_label": "01.10.2026, 22:56 MESZ",
+  "updated_at": "2026-10-02T08:08:19+02:00",
+  "updated_at_label": "02.10.2026, 08:08 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 30780.5,
-      "change_pct": 0.266,
-      "change_5d_pct": 0.045,
-      "change_30d_pct": 5.682,
+      "price": 30871.5,
+      "change_pct": 0.361,
+      "change_5d_pct": -0.057,
+      "change_30d_pct": 5.774,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7726.5,
-      "change_pct": 0.143,
-      "change_5d_pct": -0.521,
-      "change_30d_pct": 1.096,
+      "price": 7744.0,
+      "change_pct": 0.259,
+      "change_5d_pct": -0.766,
+      "change_30d_pct": 0.879,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4205.3,
-      "change_pct": 0.444,
-      "change_5d_pct": -2.157,
-      "change_30d_pct": -4.347,
+      "price": 4214.4,
+      "change_pct": 0.288,
+      "change_5d_pct": -2.472,
+      "change_30d_pct": -4.535,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 93.02,
-      "change_pct": 2.875,
-      "change_5d_pct": -1.681,
-      "change_30d_pct": 3.104,
+      "price": 92.53,
+      "change_pct": -0.366,
+      "change_5d_pct": 0.13,
+      "change_30d_pct": 1.67,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.4983,
-      "change_pct": 0.49,
-      "change_5d_pct": -1.95,
-      "change_30d_pct": 10.851,
+      "price": 1.5238,
+      "change_pct": 1.242,
+      "change_5d_pct": -0.281,
+      "change_30d_pct": 12.89,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 84618.47,
-      "change_pct": 1.191,
-      "change_5d_pct": 0.251,
-      "change_30d_pct": 9.321,
+      "price": 85888.81,
+      "change_pct": 2.157,
+      "change_5d_pct": 1.756,
+      "change_30d_pct": 11.11,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -129,6 +129,18 @@
   ],
   "financialjuice": [
     {
+      "time": "07:05",
+      "title": "Russia strikes industrial, production complex at port of Izmail in Ukraine’s Odesa region overnight: IFX cites Russian defence ministry",
+      "link": "https://www.financialjuice.com/News/9788810/Russia-strikes-industrial-production-complex-at-port-of-Izmail-in-Ukraines-Odesa-region-overnight-IFX-cites-Russian-defence-ministry.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "22:12",
+      "title": "Fed's Williams: AI is affecting supply in ways we don't fully understand.",
+      "link": "https://www.financialjuice.com/News/9788275/Feds-Williams-AI-is-affecting-supply-in-ways-we-dont-fully-understand.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
       "time": "21:53",
       "title": "US NFP Prep: Focus on Wages for Inflation Signals - FJElite",
       "link": "https://www.financialjuice.com/News/9788248/US-NFP-Prep-Focus-on-Wages-for-Inflation-Signals---FJElite.aspx?xy=rss",
@@ -145,18 +157,6 @@
       "title": "Iran's Foreign Ministry asks Iraq to take steps to lift flight restrictions due to US sanctions and return flights to normal conditions.",
       "link": "https://www.financialjuice.com/News/9788241/Irans-Foreign-Ministry-asks-Iraq-to-take-steps-to-lift-flight-restrictions-due-to-US-sanctions-and-return-flights-to-normal-conditions.aspx?xy=rss",
       "source": "FinancialJuice"
-    },
-    {
-      "time": "20:53",
-      "title": "Brent Crude futures settle at $102.31/bbl, up $4.28, 4.37%.",
-      "link": "https://www.financialjuice.com/News/9788147/Brent-Crude-futures-settle-at-10231bbl-up-428-437.aspx?xy=rss",
-      "source": "FinancialJuice"
-    },
-    {
-      "time": "19:45",
-      "title": "Fed's Kashkari: Fed's September rate hike showed the central bank will act to lower inflation.",
-      "link": "https://www.financialjuice.com/News/9788031/Feds-Kashkari-Feds-September-rate-hike-showed-the-central-bank-will-act-to-lower-inflation.aspx?xy=rss",
-      "source": "FinancialJuice"
     }
   ],
   "financialjuice_url": "https://www.financialjuice.com/home",
@@ -169,11 +169,11 @@
       "price": 7.12,
       "change_pct": -2.865,
       "change_5d_pct": -6.316,
-      "change_30d_pct": 1.136,
-      "market_state": "POST",
+      "change_30d_pct": -6.439,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -2.183,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "HIMS",
@@ -182,11 +182,11 @@
       "price": 29.3,
       "change_pct": -1.645,
       "change_5d_pct": 0.068,
-      "change_30d_pct": 3.024,
-      "market_state": "POST",
+      "change_30d_pct": 2.162,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -1.351,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "COPX",
@@ -195,11 +195,11 @@
       "price": 83.4,
       "change_pct": -1.535,
       "change_5d_pct": -3.304,
-      "change_30d_pct": -6.544,
-      "market_state": "POST",
+      "change_30d_pct": -7.23,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -1.535,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "CELH",
@@ -208,11 +208,11 @@
       "price": 27.41,
       "change_pct": 0.219,
       "change_5d_pct": -3.588,
-      "change_30d_pct": -10.775,
-      "market_state": "POST",
+      "change_30d_pct": -12.4,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": 0.366,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "SPCX",
@@ -221,18 +221,18 @@
       "price": 148.07,
       "change_pct": -1.849,
       "change_5d_pct": 0.027,
-      "change_30d_pct": 4.106,
-      "market_state": "POST",
+      "change_30d_pct": 5.231,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -1.531,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     }
   ],
   "stocks_summary": {
     "change_pct": -1.535,
     "change_5d_pct": -2.623,
-    "change_30d_pct": -1.811,
-    "premarket_pct": -1.247,
+    "change_30d_pct": -3.735,
+    "premarket_pct": null,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
