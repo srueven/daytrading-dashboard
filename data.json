@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-06T14:08:44+02:00",
-  "updated_at_label": "06.10.2026, 14:08 MESZ",
+  "updated_at": "2026-10-06T14:33:03+02:00",
+  "updated_at_label": "06.10.2026, 14:33 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 31512.0,
-      "change_pct": 0.62,
-      "change_5d_pct": 2.936,
-      "change_30d_pct": 6.68,
+      "price": 31518.0,
+      "change_pct": 0.639,
+      "change_5d_pct": 2.955,
+      "change_30d_pct": 6.701,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7865.25,
-      "change_pct": 0.498,
-      "change_5d_pct": 1.723,
-      "change_30d_pct": 2.405,
+      "price": 7864.0,
+      "change_pct": 0.482,
+      "change_5d_pct": 1.707,
+      "change_30d_pct": 2.389,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4201.4,
-      "change_pct": 1.073,
-      "change_5d_pct": 0.519,
-      "change_30d_pct": -5.353,
+      "price": 4206.5,
+      "change_pct": 1.196,
+      "change_5d_pct": 0.641,
+      "change_30d_pct": -5.238,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 87.3,
-      "change_pct": -2.382,
-      "change_5d_pct": -2.327,
-      "change_30d_pct": -6.159,
+      "price": 86.95,
+      "change_pct": -2.773,
+      "change_5d_pct": -2.719,
+      "change_30d_pct": -6.536,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.5127,
-      "change_pct": 0.258,
-      "change_5d_pct": 1.249,
-      "change_30d_pct": 6.317,
+      "price": 1.5101,
+      "change_pct": 0.086,
+      "change_5d_pct": 1.075,
+      "change_30d_pct": 6.134,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 86299.46,
-      "change_pct": 0.5,
-      "change_5d_pct": 1.705,
-      "change_30d_pct": 7.404,
+      "price": 86191.54,
+      "change_pct": 0.374,
+      "change_5d_pct": 1.577,
+      "change_30d_pct": 7.27,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -129,9 +129,9 @@
   ],
   "financialjuice": [
     {
-      "time": "13:40",
-      "title": "China seeks talks with EU to address concerns",
-      "link": "https://www.financialjuice.com/News/9793512/China-seeks-talks-with-EU-to-address-concerns.aspx?xy=rss",
+      "time": "14:26",
+      "title": "Iran Hormuz will not be opened by threats or pressure.",
+      "link": "https://www.financialjuice.com/News/9793578/Iran-Hormuz-will-not-be-opened-by-threats-or-pressure.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
@@ -172,7 +172,7 @@
       "change_30d_pct": -2.625,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 1.086,
+      "premarket_pct": 0.943,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": 5.325,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.909,
+      "premarket_pct": 1.077,
       "show_premarket": true
     },
     {
@@ -198,7 +198,7 @@
       "change_30d_pct": -8.529,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.769,
+      "premarket_pct": 0.654,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -6.901,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.726,
+      "premarket_pct": 0.799,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 11.481,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": 0.427,
+      "premarket_pct": 0.479,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": 3.159,
     "change_5d_pct": 3.372,
     "change_30d_pct": -0.25,
-    "premarket_pct": 0.783,
+    "premarket_pct": 0.79,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
