@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-08T14:35:28+02:00",
-  "updated_at_label": "08.10.2026, 14:35 MESZ",
+  "updated_at": "2026-10-08T15:02:08+02:00",
+  "updated_at_label": "08.10.2026, 15:02 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 31208.5,
-      "change_pct": -0.617,
-      "change_5d_pct": 1.456,
-      "change_30d_pct": 5.653,
+      "price": 31170.5,
+      "change_pct": -0.738,
+      "change_5d_pct": 1.333,
+      "change_30d_pct": 5.524,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7823.0,
-      "change_pct": -0.379,
-      "change_5d_pct": 1.282,
-      "change_30d_pct": 1.855,
+      "price": 7817.5,
+      "change_pct": -0.449,
+      "change_5d_pct": 1.211,
+      "change_30d_pct": 1.784,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4152.8,
-      "change_pct": 0.292,
-      "change_5d_pct": -1.178,
-      "change_30d_pct": -6.447,
+      "price": 4139.7,
+      "change_pct": -0.024,
+      "change_5d_pct": -1.49,
+      "change_30d_pct": -6.743,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 92.62,
-      "change_pct": 4.916,
-      "change_5d_pct": -0.269,
-      "change_30d_pct": -0.441,
+      "price": 92.54,
+      "change_pct": 4.826,
+      "change_5d_pct": -0.355,
+      "change_30d_pct": -0.527,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.3933,
-      "change_pct": -3.551,
-      "change_5d_pct": -6.27,
-      "change_30d_pct": -1.62,
+      "price": 1.3938,
+      "change_pct": -2.742,
+      "change_5d_pct": -6.236,
+      "change_30d_pct": -1.585,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 82303.02,
-      "change_pct": -1.391,
-      "change_5d_pct": -2.903,
-      "change_30d_pct": 4.927,
+      "price": 82139.07,
+      "change_pct": -1.206,
+      "change_5d_pct": -3.096,
+      "change_30d_pct": 4.718,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -131,31 +131,31 @@
     {
       "time": "13:42",
       "title": "USTR Greer: The US has a “stable situation’ with China",
-      "link": "https://www.financialjuice.com/News/9797087/USTR-Greer-The-US-has-a-stable-situation-with-China.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9797087/USTR-Greer-The-US-has-a-stable-situation-with-China.aspx",
       "source": "FinancialJuice"
     },
     {
       "time": "13:40",
       "title": "ECB Officials: Higher yields could materially impact economy.",
-      "link": "https://www.financialjuice.com/News/9797085/ECB-Officials-Higher-yields-could-materially-impact-economy.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9797085/ECB-Officials-Higher-yields-could-materially-impact-economy.aspx",
       "source": "FinancialJuice"
     },
     {
       "time": "13:23",
       "title": "UK imposes sanctions targeting Russian oil companies and tankers",
-      "link": "https://www.financialjuice.com/News/9797052/UK-imposes-sanctions-targeting-Russian-oil-companies-and-tankers.aspx?xy=rss",
+      "link": "https://www.financialjuice.com/News/9797052/UK-imposes-sanctions-targeting-Russian-oil-companies-and-tankers.aspx",
       "source": "FinancialJuice"
     },
     {
-      "time": "10:31",
-      "title": "Fed's Waller: Concerned high inflation, now approaching 5-1/2 years above target, will put inflation expectations at risk.",
-      "link": "https://www.financialjuice.com/News/9796829/Feds-Waller-Concerned-high-inflation-now-approaching-5-12-years-above-target-will-put-inflation-expectations-at-risk.aspx?xy=rss",
+      "time": "13:16",
+      "title": "ECB's Stournaras: Inflation expectations well anchored around 2%.",
+      "link": "https://www.financialjuice.com/News/9797050/ECBs-Stournaras-Inflation-expectations-well-anchored-around-2.aspx",
       "source": "FinancialJuice"
     },
     {
-      "time": "10:00",
-      "title": "ECB's Dolenc: Inflation risks skewed to the upside on oil, gas, food, strong growth.",
-      "link": "https://www.financialjuice.com/News/9796764/ECBs-Dolenc-Inflation-risks-skewed-to-the-upside-on-oil-gas-food-strong-growth.aspx?xy=rss",
+      "time": "10:58",
+      "title": "Fed's Waller: AI productivity seen anecdotally, not yet in data.",
+      "link": "https://www.financialjuice.com/News/9796845/Feds-Waller-AI-productivity-seen-anecdotally-not-yet-in-data.aspx",
       "source": "FinancialJuice"
     }
   ],
@@ -172,7 +172,7 @@
       "change_30d_pct": -5.643,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -1.808,
+      "premarket_pct": -2.079,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": 4.863,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.499,
+      "premarket_pct": -0.372,
       "show_premarket": true
     },
     {
@@ -198,7 +198,7 @@
       "change_30d_pct": -11.443,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -1.053,
+      "premarket_pct": -1.249,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": -8.931,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.26,
+      "premarket_pct": 0.037,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 9.207,
       "market_state": "PRE",
       "market_open": false,
-      "premarket_pct": -0.694,
+      "premarket_pct": -0.621,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": -1.946,
     "change_5d_pct": 1.091,
     "change_30d_pct": -2.389,
-    "premarket_pct": -0.863,
+    "premarket_pct": -0.857,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
