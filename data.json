@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-08T22:56:27+02:00",
-  "updated_at_label": "08.10.2026, 22:56 MESZ",
+  "updated_at": "2026-10-09T08:09:58+02:00",
+  "updated_at_label": "09.10.2026, 08:09 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
       "name": "Nasdaq-100 Micro",
       "alias": "MNQ/NQ",
-      "price": 31002.25,
-      "change_pct": -1.274,
-      "change_5d_pct": 0.786,
-      "change_30d_pct": 4.955,
+      "price": 31158.5,
+      "change_pct": 0.61,
+      "change_5d_pct": 0.311,
+      "change_30d_pct": 5.806,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7819.5,
-      "change_pct": -0.423,
-      "change_5d_pct": 1.236,
-      "change_30d_pct": 1.81,
+      "price": 7840.0,
+      "change_pct": 0.304,
+      "change_5d_pct": 0.807,
+      "change_30d_pct": 2.567,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4158.7,
-      "change_pct": 0.435,
-      "change_5d_pct": -1.038,
-      "change_30d_pct": -6.314,
+      "price": 4218.2,
+      "change_pct": 1.472,
+      "change_5d_pct": 1.343,
+      "change_30d_pct": -5.436,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 91.01,
-      "change_pct": 3.092,
-      "change_5d_pct": -2.003,
-      "change_30d_pct": -2.171,
+      "price": 90.37,
+      "change_pct": -1.224,
+      "change_5d_pct": -0.812,
+      "change_30d_pct": -5.914,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.3778,
-      "change_pct": -3.074,
-      "change_5d_pct": -7.313,
-      "change_30d_pct": -2.715,
+      "price": 1.397,
+      "change_pct": -0.584,
+      "change_5d_pct": -6.021,
+      "change_30d_pct": 0.185,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 81733.22,
-      "change_pct": -1.98,
-      "change_5d_pct": -3.575,
-      "change_30d_pct": 4.2,
+      "price": 82380.73,
+      "change_pct": -0.523,
+      "change_5d_pct": -2.811,
+      "change_30d_pct": 5.266,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -129,9 +129,21 @@
   ],
   "financialjuice": [
     {
-      "time": "21:32",
-      "title": "Kremlin Spokesman Peskov: Russia agrees with US Secretary of State Rubio that the Ukraine conflict is in a stalemate.",
-      "link": "https://www.financialjuice.com/News/9797806/Kremlin-Spokesman-Peskov-Russia-agrees-with-US-Secretary-of-State-Rubio-that-the-Ukraine-conflict-is-in-a-stalemate.aspx?xy=rss",
+      "time": "06:49",
+      "title": "Ukraine drone attack ignites fire at industrial site in Russia's Tver region: TASS quotes governor",
+      "link": "https://www.financialjuice.com/News/9798346/Ukraine-drone-attack-ignites-fire-at-industrial-site-in-Russias-Tver-region-TASS-quotes-governor.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "04:14",
+      "title": "China authorizes non-state crude oil import quota for 2027 at 257 million metric tons: commerce ministry",
+      "link": "https://www.financialjuice.com/News/9798224/China-authorizes-non-state-crude-oil-import-quota-for-2027-at-257-million-metric-tons-commerce-ministry.aspx?xy=rss",
+      "source": "FinancialJuice"
+    },
+    {
+      "time": "02:21",
+      "title": "China PBOC likely to fix yuan midpoint at 6.6973 per dollar: estimate",
+      "link": "https://www.financialjuice.com/News/9798054/China-PBOC-likely-to-fix-yuan-midpoint-at-66973-per-dollar-estimate.aspx?xy=rss",
       "source": "FinancialJuice"
     },
     {
@@ -145,18 +157,6 @@
       "title": "Fed's Musalem: Market inflation expectations remain anchored, doesn't see Fed credibility questioned",
       "link": "https://www.financialjuice.com/News/9797677/Feds-Musalem-Market-inflation-expectations-remain-anchored-doesnt-see-Fed-credibility-questioned.aspx?xy=rss",
       "source": "FinancialJuice"
-    },
-    {
-      "time": "19:00",
-      "title": "US Sanctions 17 Vessels Transporting Iranian Oil as Blockade Disrupts Crude Shipments",
-      "link": "https://www.financialjuice.com/News/9797598/US-Sanctions-17-Vessels-Transporting-Iranian-Oil-as-Blockade-Disrupts-Crude-Shipments.aspx?xy=rss",
-      "source": "FinancialJuice"
-    },
-    {
-      "time": "18:37",
-      "title": "ECB's President Lagarde: The ECB has the tools to counter unwarranted market dynamics.",
-      "link": "https://www.financialjuice.com/News/9797563/ECBs-President-Lagarde-The-ECB-has-the-tools-to-counter-unwarranted-market-dynamics.aspx?xy=rss",
-      "source": "FinancialJuice"
     }
   ],
   "financialjuice_url": "https://www.financialjuice.com/home",
@@ -169,11 +169,11 @@
       "price": 6.85,
       "change_pct": -4.729,
       "change_5d_pct": -3.792,
-      "change_30d_pct": -10.105,
-      "market_state": "POST",
+      "change_30d_pct": -6.036,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -4.033,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "HIMS",
@@ -182,11 +182,11 @@
       "price": 28.06,
       "change_pct": -5.01,
       "change_5d_pct": -4.232,
-      "change_30d_pct": -0.39,
-      "market_state": "POST",
+      "change_30d_pct": 0.573,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -4.942,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "COPX",
@@ -195,11 +195,11 @@
       "price": 82.22,
       "change_pct": -1.627,
       "change_5d_pct": -1.415,
-      "change_30d_pct": -12.884,
-      "market_state": "POST",
+      "change_30d_pct": -13.698,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -1.496,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "CELH",
@@ -208,11 +208,11 @@
       "price": 27.4,
       "change_pct": 1.783,
       "change_5d_pct": -0.036,
-      "change_30d_pct": -7.307,
-      "market_state": "POST",
+      "change_30d_pct": -0.868,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": 1.226,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     },
     {
       "symbol": "SPCX",
@@ -221,18 +221,18 @@
       "price": 160.57,
       "change_pct": -4.195,
       "change_5d_pct": 8.442,
-      "change_30d_pct": 4.626,
-      "market_state": "POST",
+      "change_30d_pct": 8.824,
+      "market_state": "CLOSED",
       "market_open": false,
-      "premarket_pct": -3.013,
-      "show_premarket": true
+      "premarket_pct": null,
+      "show_premarket": false
     }
   ],
   "stocks_summary": {
     "change_pct": -2.756,
     "change_5d_pct": -0.207,
-    "change_30d_pct": -5.212,
-    "premarket_pct": -2.452,
+    "change_30d_pct": -2.241,
+    "premarket_pct": null,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
