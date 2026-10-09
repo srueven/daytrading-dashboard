@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-09T22:26:13+02:00",
-  "updated_at_label": "09.10.2026, 22:26 MESZ",
+  "updated_at": "2026-10-09T22:43:26+02:00",
+  "updated_at_label": "09.10.2026, 22:43 MESZ",
   "futures": [
     {
       "symbol": "NQ=F",
@@ -19,10 +19,10 @@
       "symbol": "ES=F",
       "name": "S&P 500 Micro",
       "alias": "MES/ES",
-      "price": 7862.0,
-      "change_pct": 0.585,
-      "change_5d_pct": 1.09,
-      "change_30d_pct": 2.855,
+      "price": 7861.25,
+      "change_pct": 0.576,
+      "change_5d_pct": 1.08,
+      "change_30d_pct": 2.845,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -32,10 +32,10 @@
       "symbol": "GC=F",
       "name": "Gold",
       "alias": "GC",
-      "price": 4220.6,
-      "change_pct": 1.53,
-      "change_5d_pct": 1.401,
-      "change_30d_pct": -5.383,
+      "price": 4221.1,
+      "change_pct": 1.542,
+      "change_5d_pct": 1.413,
+      "change_30d_pct": -5.371,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -45,10 +45,10 @@
       "symbol": "CL=F",
       "name": "Rohöl (WTI)",
       "alias": "CL",
-      "price": 91.46,
-      "change_pct": -0.033,
-      "change_5d_pct": 0.384,
-      "change_30d_pct": -4.779,
+      "price": 91.69,
+      "change_pct": 0.219,
+      "change_5d_pct": 0.637,
+      "change_30d_pct": -4.539,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -94,10 +94,10 @@
       "symbol": "XRP-USD",
       "name": "XRP",
       "alias": "XRP",
-      "price": 1.3882,
-      "change_pct": 0.813,
-      "change_5d_pct": -8.682,
-      "change_30d_pct": -0.446,
+      "price": 1.3863,
+      "change_pct": 0.675,
+      "change_5d_pct": -8.807,
+      "change_30d_pct": -0.583,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -107,10 +107,10 @@
       "symbol": "BTC-USD",
       "name": "Bitcoin",
       "alias": "BTC",
-      "price": 82335.0,
-      "change_pct": 0.733,
-      "change_5d_pct": -4.793,
-      "change_30d_pct": 5.208,
+      "price": 82309.38,
+      "change_pct": 0.701,
+      "change_5d_pct": -4.823,
+      "change_30d_pct": 5.175,
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
@@ -172,7 +172,7 @@
       "change_30d_pct": -7.682,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": -1.752,
+      "premarket_pct": -1.577,
       "show_premarket": true
     },
     {
@@ -185,7 +185,7 @@
       "change_30d_pct": 10.824,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": 10.014,
+      "premarket_pct": 9.943,
       "show_premarket": true
     },
     {
@@ -198,7 +198,7 @@
       "change_30d_pct": -9.993,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": 4.293,
+      "premarket_pct": 4.05,
       "show_premarket": true
     },
     {
@@ -211,7 +211,7 @@
       "change_30d_pct": 3.401,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": 4.204,
+      "premarket_pct": 4.343,
       "show_premarket": true
     },
     {
@@ -224,7 +224,7 @@
       "change_30d_pct": 10.18,
       "market_state": "POST",
       "market_open": false,
-      "premarket_pct": 1.264,
+      "premarket_pct": 1.399,
       "show_premarket": true
     }
   ],
@@ -232,7 +232,7 @@
     "change_pct": 3.657,
     "change_5d_pct": 1.701,
     "change_30d_pct": 1.346,
-    "premarket_pct": 3.605,
+    "premarket_pct": 3.632,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
   }
