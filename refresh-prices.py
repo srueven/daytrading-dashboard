@@ -340,6 +340,34 @@ def recompute_stocks_summary(stocks: list[dict]) -> dict:
     }
 
 
+def apply_holdings_pct(data: dict) -> None:
+    """Compute weight_pct / gv_pct per stock from public *normalized* ratios.
+
+    data["holdings_norm"][SYM] = {"u": units, "c": cost_norm|null}
+    u = shares * K, c = shares * cost * K, K = 100 / total cost (unknown
+    publicly). K cancels: weight = price*u / sum(price*u), gv = price*u/c - 1.
+    No absolute shares or money amounts are stored publicly.
+    """
+    norm = data.get("holdings_norm") or {}
+    stocks = data.get("stocks") or []
+    vals = {}
+    for s in stocks:
+        h = norm.get(s.get("symbol"))
+        if h and s.get("price") is not None and h.get("u"):
+            vals[s["symbol"]] = s["price"] * h["u"]
+    total = sum(vals.values())
+    for s in stocks:
+        sym = s.get("symbol")
+        h = norm.get(sym)
+        if not h or sym not in vals or total <= 0:
+            s["weight_pct"] = None
+            s["gv_pct"] = None
+            continue
+        s["weight_pct"] = round(vals[sym] / total * 100.0, 2)
+        c = h.get("c")
+        s["gv_pct"] = round((vals[sym] / c - 1.0) * 100.0, 2) if c else None
+
+
 def stamp_now() -> tuple[str, str]:
     now = datetime.now(TZ)
     updated_at = now.isoformat(timespec="seconds")
@@ -595,6 +623,7 @@ def main() -> int:
     stocks = data.get("stocks") or []
     if stocks:
         data["stocks_summary"] = recompute_stocks_summary(stocks)
+    apply_holdings_pct(data)
 
     data["updated_at"], data["updated_at_label"] = stamp_now()
     write_data(data)

@@ -173,7 +173,9 @@
       "market_state": "PRE",
       "market_open": false,
       "premarket_pct": 0.446,
-      "show_premarket": true
+      "show_premarket": true,
+      "weight_pct": 19.84,
+      "gv_pct": -23.7
     },
     {
       "symbol": "HIMS",
@@ -186,7 +188,9 @@
       "market_state": "PRE",
       "market_open": false,
       "premarket_pct": 0.55,
-      "show_premarket": true
+      "show_premarket": true,
+      "weight_pct": 8.0,
+      "gv_pct": -10.56
     },
     {
       "symbol": "COPX",
@@ -199,7 +203,9 @@
       "market_state": "PRE",
       "market_open": false,
       "premarket_pct": 0.502,
-      "show_premarket": true
+      "show_premarket": true,
+      "weight_pct": 4.44,
+      "gv_pct": null
     },
     {
       "symbol": "CELH",
@@ -212,7 +218,9 @@
       "market_state": "PRE",
       "market_open": false,
       "premarket_pct": 0.245,
-      "show_premarket": true
+      "show_premarket": true,
+      "weight_pct": 8.87,
+      "gv_pct": -41.23
     },
     {
       "symbol": "SPCX",
@@ -225,7 +233,9 @@
       "market_state": "PRE",
       "market_open": false,
       "premarket_pct": 1.064,
-      "show_premarket": true
+      "show_premarket": true,
+      "weight_pct": 58.86,
+      "gv_pct": -19.4
     }
   ],
   "stocks_summary": {
@@ -235,5 +245,28 @@
     "premarket_pct": 0.561,
     "count": 5,
     "label": "Stocks-Basket (gleichgewichtet)"
-  }
+  },
+  "holdings_norm": {
+    "SPCX": {
+      "u": 0.294217,
+      "c": 59.340535
+    },
+    "ONDS": {
+      "u": 2.395763,
+      "c": 21.130632
+    },
+    "CELH": {
+      "u": 0.252186,
+      "c": 12.263786
+    },
+    "HIMS": {
+      "u": 0.210155,
+      "c": 7.265047
+    },
+    "COPX": {
+      "u": 0.042031,
+      "c": null
+    }
+  },
+  "holdings_note": "Gewichtung % (Wert-Anteil Aktien, ohne Cash) und G/V % vs Einstand; nur normierte Verhältnisse, keine Beträge."
 }
