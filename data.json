@@ -101,7 +101,9 @@
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
-      "show_premarket": false
+      "show_premarket": false,
+      "weight_pct": 100.0,
+      "gv_pct": -42.91
     },
     {
       "symbol": "BTC-USD",
@@ -114,7 +116,9 @@
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
-      "show_premarket": false
+      "show_premarket": false,
+      "weight_pct": null,
+      "gv_pct": null
     }
   ],
   "asia_wrap": "Risk-on nach Nasdaq-Rekordschluss Mo: AI/Semis (AMD >$1T) tragen NQ; Asien/Overnight halten NQ knapp grün, ES flat. Gold leicht weicher, Öl weiter unter Druck (−2.7% vs Mo). 10y wieder unter 5% stützt Duration/Tech.",
@@ -268,5 +272,11 @@
       "c": null
     }
   },
-  "holdings_note": "Gewichtung % (Wert-Anteil Aktien, ohne Cash) und G/V % vs Einstand; nur normierte Verhältnisse, keine Beträge."
+  "holdings_note": "Gewichtung % (Wert-Anteil Aktien, ohne Cash) und G/V % vs Einstand; nur normierte Verhältnisse, keine Beträge.",
+  "crypto_holdings_norm": {
+    "XRP-USD": {
+      "u": 45.454545,
+      "c": 100.0
+    }
+  }
 }

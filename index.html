@@ -413,7 +413,9 @@
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
-      "show_premarket": false
+      "show_premarket": false,
+      "weight_pct": 100.0,
+      "gv_pct": -42.91
     },
     {
       "symbol": "BTC-USD",
@@ -426,7 +428,9 @@
       "market_state": "REGULAR",
       "market_open": true,
       "premarket_pct": null,
-      "show_premarket": false
+      "show_premarket": false,
+      "weight_pct": null,
+      "gv_pct": null
     }
   ],
   "asia_wrap": "Risk-on nach Nasdaq-Rekordschluss Mo: AI/Semis (AMD >$1T) tragen NQ; Asien/Overnight halten NQ knapp grün, ES flat. Gold leicht weicher, Öl weiter unter Druck (−2.7% vs Mo). 10y wieder unter 5% stützt Duration/Tech.",
@@ -580,7 +584,13 @@
       "c": null
     }
   },
-  "holdings_note": "Gewichtung % (Wert-Anteil Aktien, ohne Cash) und G/V % vs Einstand; nur normierte Verhältnisse, keine Beträge."
+  "holdings_note": "Gewichtung % (Wert-Anteil Aktien, ohne Cash) und G/V % vs Einstand; nur normierte Verhältnisse, keine Beträge.",
+  "crypto_holdings_norm": {
+    "XRP-USD": {
+      "u": 45.454545,
+      "c": 100.0
+    }
+  }
 }
   </script>
   <script>
@@ -712,7 +722,7 @@
           </div>
           ${preHtml}
           <div class="ov-range">5T <span class="${pctClass(f.change_5d_pct)}">${fmtPctSigned(f.change_5d_pct)}</span> · 30T <span class="${pctClass(f.change_30d_pct)}">${fmtPctSigned(f.change_30d_pct)}</span></div>
-          ${(kind === "stocks" && f.weight_pct != null) ? `<div class="ov-range">Gew. ${Number(f.weight_pct).toFixed(2)}% · G/V ${f.gv_pct != null ? `<span class="${pctClass(f.gv_pct)}">${f.gv_pct > 0 ? "+" : ""}${Number(f.gv_pct).toFixed(2)}%</span>` : "–"}</div>` : ""}
+          ${((kind === "stocks" || kind === "crypto") && f.weight_pct != null) ? `<div class="ov-range">Gew. ${Number(f.weight_pct).toFixed(2)}% · G/V ${f.gv_pct != null ? `<span class="${pctClass(f.gv_pct)}">${f.gv_pct > 0 ? "+" : ""}${Number(f.gv_pct).toFixed(2)}%</span>` : "–"}</div>` : ""}
         </a>`;
       }).join("");
     }

@@ -340,23 +340,15 @@ def recompute_stocks_summary(stocks: list[dict]) -> dict:
     }
 
 
-def apply_holdings_pct(data: dict) -> None:
-    """Compute weight_pct / gv_pct per stock from public *normalized* ratios.
-
-    data["holdings_norm"][SYM] = {"u": units, "c": cost_norm|null}
-    u = shares * K, c = shares * cost * K, K = 100 / total cost (unknown
-    publicly). K cancels: weight = price*u / sum(price*u), gv = price*u/c - 1.
-    No absolute shares or money amounts are stored publicly.
-    """
-    norm = data.get("holdings_norm") or {}
-    stocks = data.get("stocks") or []
+def _apply_norm(items: list, norm: dict) -> None:
+    """weight_pct / gv_pct for one asset group from normalized {u, c} ratios."""
     vals = {}
-    for s in stocks:
+    for s in items:
         h = norm.get(s.get("symbol"))
         if h and s.get("price") is not None and h.get("u"):
             vals[s["symbol"]] = s["price"] * h["u"]
     total = sum(vals.values())
-    for s in stocks:
+    for s in items:
         sym = s.get("symbol")
         h = norm.get(sym)
         if not h or sym not in vals or total <= 0:
@@ -366,6 +358,22 @@ def apply_holdings_pct(data: dict) -> None:
         s["weight_pct"] = round(vals[sym] / total * 100.0, 2)
         c = h.get("c")
         s["gv_pct"] = round((vals[sym] / c - 1.0) * 100.0, 2) if c else None
+
+
+def apply_holdings_pct(data: dict) -> None:
+    """Compute weight_pct / gv_pct per stock and per crypto from public
+    *normalized* ratios (two independent groups, never mixed).
+
+    data["holdings_norm"][SYM]        = {"u", "c"} for stocks
+        u = shares * K, c = shares * cost * K, K = 100 / total stock cost
+    data["crypto_holdings_norm"][SYM] = {"u", "c"} for crypto (Yahoo symbol)
+        u = qty * Kc, c = qty * cost * Kc, Kc = 100 / total crypto cost
+    K / Kc are secret and cancel: weight = price*u / sum(price*u) within the
+    group, gv = price*u/c - 1. No absolute units, money amounts or
+    stock-vs-crypto size ratio are stored publicly.
+    """
+    _apply_norm(data.get("stocks") or [], data.get("holdings_norm") or {})
+    _apply_norm(data.get("crypto") or [], data.get("crypto_holdings_norm") or {})
 
 
 def stamp_now() -> tuple[str, str]:
