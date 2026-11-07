@@ -164,7 +164,7 @@
     }
   ],
   "financialjuice_url": "https://www.financialjuice.com/home",
-  "financialjuice_note": "Top 5 · letzte ~24h · auto alle 15 Min",
+  "financialjuice_note": "Top 5 · letzte ~24h · letzter Abruf",
   "stocks": [
     {
       "symbol": "ONDS",

@@ -1,8 +1,9 @@
 name: Refresh prices
 
+# Scheduled price refresh removed. Quotes load in the browser when the
+# dashboard is opened. workflow_dispatch still refreshes the committed
+# fallback snapshot (data.json + embedded JSON) on request.
 on:
-  schedule:
-    - cron: "*/15 6-20 * * 1-5"
   workflow_dispatch:
 
 permissions:
