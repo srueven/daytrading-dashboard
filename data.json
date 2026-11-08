@@ -103,7 +103,7 @@
       "premarket_pct": null,
       "show_premarket": false,
       "weight_pct": 100.0,
-      "gv_pct": -46.34
+      "gv_pct": -44.44
     },
     {
       "symbol": "BTC-USD",
@@ -275,7 +275,7 @@
   "holdings_note": "Gewichtung % (Wert-Anteil Aktien, ohne Cash) und G/V % vs Einstand; nur normierte Verhältnisse, keine Beträge.",
   "crypto_holdings_norm": {
     "XRP-USD": {
-      "u": 45.454545,
+      "u": 47.064574,
       "c": 100.0
     }
   }
