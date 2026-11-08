@@ -37,7 +37,7 @@ SECTIONS = ("futures", "stocks", "crypto")
 
 FJ_RSS_URL = "https://www.financialjuice.com/feed.ashx?xy=rss"
 FJ_TITLE_PREFIX = "FinancialJuice: "
-FJ_NOTE = "Top 5 · letzte ~24h · auto alle 15 Min"
+FJ_NOTE = "Top 5 · letzte ~24h · letzter Abruf"
 FJ_DEFAULT_URL = "https://www.financialjuice.com/home"
 
 def _kw_match(low: str, kw: str) -> bool:
