@@ -154,6 +154,23 @@ test("holdings stay separate percentages and match the saved snapshot", () => {
   assert.equal(JSON.stringify(stocks).includes("purchase"), false);
 });
 
+test("published XRP basis is the normalized ratio and the snapshot gain", () => {
+  const data = JSON.parse(fs.readFileSync(new URL("./data.json", import.meta.url), "utf8"));
+  const html = fs.readFileSync(new URL("./index.html", import.meta.url), "utf8");
+  const embedded = JSON.parse(html.match(/<script id="data" type="application\/json">\s*([\s\S]*?)\s*<\/script>/)[1]);
+  assert.deepEqual(embedded, data);
+  const xrp = data.crypto.find(c => c.symbol === "XRP-USD");
+  assert.deepEqual(data.crypto_holdings_norm["XRP-USD"], { u: 47.064574, c: 100 });
+  assert.equal(xrp.price, 1.1805);
+  assert.equal(xrp.weight_pct, 100);
+  const gv = Math.round((xrp.price * 47.064574 / 100 - 1) * 100 * 100) / 100;
+  assert.equal(gv, -44.44);
+  assert.equal(xrp.gv_pct, -44.44);
+  assert.equal(data.updated_at, "2026-11-07T01:05:58+01:00");
+  assert.equal(data.updated_at_label, "07.11.2026, 01:05 MEZ");
+  assert.equal(data.crypto.find(c => c.symbol === "BTC-USD").gv_pct, null);
+});
+
 test("headline selection caps trump soundbites and keeps https links", () => {
   const now = Date.parse("2026-11-07T15:00:00Z");
   const xml = `<?xml version="1.0"?><rss><channel>
