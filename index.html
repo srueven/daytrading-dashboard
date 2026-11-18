@@ -171,6 +171,15 @@
     .note { color: var(--muted); font-size: 0.78rem; margin-top: 2px; }
     .cal-item, .pol-item, .fj-item { padding: 8px 0; border-bottom: 1px solid var(--border); }
     .cal-item:last-child, .pol-item:last-child, .fj-item:last-child { border-bottom: none; }
+    .cal-item.is-past { opacity: 0.58; }
+    .cal-item.is-past .time { color: var(--muted); }
+    .cal-day {
+      margin: 10px 0 0; font-size: 0.72rem; font-weight: 800;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);
+    }
+    .cal-day:first-child { margin-top: 0; }
+    .cal-status { display: flex; align-items: center; gap: 8px; min-height: 1.2em; }
+    .cal-status.is-stale { color: var(--warn); }
     .time { color: var(--warn); font-weight: 600; font-size: 0.85rem; }
     .impact { color: var(--muted); font-size: 0.75rem; }
     .fj-item a { color: var(--text); text-decoration: none; }
@@ -328,7 +337,11 @@
 
     <section id="kalender">
       <h2>Kalender</h2>
-      <div class="card" id="calendar"></div>
+      <p class="note cal-status" id="cal-status" role="status" aria-live="polite">
+        <span class="spin" id="cal-spin" hidden></span>
+        <span id="cal-status-text"></span>
+      </p>
+      <div class="card" id="calendar" aria-busy="false"></div>
     </section>
 
     <section id="politik">
@@ -627,6 +640,7 @@
 }
   </script>
   <script src="quote-refresh.js"></script>
+  <script src="calendar.js"></script>
   <script>
     const fallback = JSON.parse(document.getElementById("data").textContent);
     let current = fallback;
@@ -829,14 +843,6 @@
         </div>`;
       }).join("");
 
-      document.getElementById("calendar").innerHTML = (data.calendar || []).map(c =>
-        `<div class="cal-item">
-          <div class="time">${esc(formatCalTime(c.time_cest))}</div>
-          <div>${esc(c.event)}</div>
-          <div class="impact">Impact: ${esc(c.impact)}</div>
-        </div>`
-      ).join("");
-
       document.getElementById("politics").innerHTML = (data.politics || []).map(p => {
         const text = typeof p === "string" ? p : (p.text || p.title || "");
         const url = (typeof p === "object" && p && p.url)
@@ -953,8 +959,90 @@
       }
     }
 
-    document.getElementById("refresh-retry").addEventListener("click", startRefresh);
+    function renderCalendarModel(model) {
+      const status = document.getElementById("cal-status");
+      const text = document.getElementById("cal-status-text");
+      const spin = document.getElementById("cal-spin");
+      const box = document.getElementById("calendar");
+      if (status) status.classList.toggle("is-stale", !!model.stale);
+      if (text) text.textContent = model.statusText || "";
+      if (spin) spin.hidden = true;
+      if (box) {
+        box.dataset.ready = "1";
+        box.setAttribute("aria-busy", "false");
+      }
+      const groups = model.groups || [];
+      if (!groups.length) {
+        box.innerHTML = `<p class="lede">Keine relevanten Termine heute oder morgen.</p>`;
+        return;
+      }
+      box.innerHTML = groups.map(group => {
+        const head = group.label ? `<div class="cal-day">${esc(group.label)}</div>` : "";
+        const items = (group.items || []).map(item => {
+          const when = item.legacy ? formatCalTime(item.time) : item.time;
+          const name = item.country ? (item.country + " · " + item.title) : item.title;
+          const bits = [];
+          if (item.forecast) bits.push("Prognose " + item.forecast);
+          if (item.previous) bits.push("zuvor " + item.previous);
+          const extra = bits.length ? `<div class="note">${esc(bits.join(" · "))}</div>` : "";
+          return `<div class="cal-item${item.past ? " is-past" : ""}">
+            <div class="time">${esc(when)}</div>
+            <div>${esc(name)}</div>
+            ${item.impact ? `<div class="impact">Impact: ${esc(item.impact)}</div>` : ""}
+            ${extra}
+          </div>`;
+        }).join("");
+        return head + items;
+      }).join("");
+    }
+
+    function setCalendarLoading() {
+      const status = document.getElementById("cal-status");
+      const text = document.getElementById("cal-status-text");
+      const spin = document.getElementById("cal-spin");
+      const box = document.getElementById("calendar");
+      if (status) status.classList.remove("is-stale");
+      if (spin) spin.hidden = false;
+      if (text) text.textContent = "Kalender wird geladen…";
+      if (box) {
+        box.setAttribute("aria-busy", "true");
+        if (!box.dataset.ready) box.innerHTML = `<p class="lede">Kalender wird geladen…</p>`;
+      }
+    }
+
+    let calendarInflight = false;
+    async function loadCalendar() {
+      if (calendarInflight) return;
+      calendarInflight = true;
+      setCalendarLoading();
+      const ctrl = typeof AbortController === "function" ? new AbortController() : null;
+      const timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 8000);
+      try {
+        const res = await fetch("calendar.json?t=" + Date.now(), {
+          cache: "no-store",
+          credentials: "omit",
+          signal: ctrl ? ctrl.signal : undefined,
+        });
+        if (!res || !res.ok) throw new Error("http");
+        const payload = await res.json();
+        if (!payload || !Array.isArray(payload.events)) throw new Error("parse");
+        renderCalendarModel(CalendarView.prepare(payload, new Date()));
+      } catch (err) {
+        renderCalendarModel(CalendarView.prepareFallback(current));
+      } finally {
+        clearTimeout(timer);
+        calendarInflight = false;
+        const spin = document.getElementById("cal-spin");
+        if (spin) spin.hidden = true;
+      }
+    }
+
+    document.getElementById("refresh-retry").addEventListener("click", function () {
+      loadCalendar();
+      startRefresh();
+    });
     renderAll(current, quoteView);
+    loadCalendar();
     function boot() {
       if (window.__quoteBooted) return;
       window.__quoteBooted = true;
@@ -963,7 +1051,10 @@
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
     else boot();
     window.addEventListener("pageshow", function (ev) {
-      if (ev.persisted) startRefresh();
+      if (ev.persisted) {
+        loadCalendar();
+        startRefresh();
+      }
     });
 
     // Charts: TradingView iframe embeds (work with file://). Kein Intervall, kein Hintergrund-Job.
