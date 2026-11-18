@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-11-18T15:01:48+01:00",
-  "generated_at_label": "18.11.2026, 15:01 MEZ",
+  "generated_at": "2026-11-18T22:39:40+01:00",
+  "generated_at_label": "18.11.2026, 22:39 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Google News",
   "source_url": "https://news.google.com/rss/search",
   "items": [
     {
-      "title": "Kremlin: Putin and Trump to discuss current issues and Ukraine - Tass",
+      "title": "Trump has raised the cases of Youlin Chen and Min Zin to China’s President Xi - ABC.",
       "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9857637/Kremlin-Putin-and-Trump-to-discuss-current-issues-and-Ukraine---Tass.aspx?xy=rss",
-      "published_zurich": "18.11.2026, 11:49 MEZ",
-      "topic": "Ukraine"
-    },
-    {
-      "title": "Trump is meeting with the Mexican President and the Canadian PM - White House Official",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9857613/Trump-is-meeting-with-the-Mexican-President-and-the-Canadian-PM---White-House-Official.aspx?xy=rss",
-      "published_zurich": "18.11.2026, 11:41 MEZ",
-      "topic": "Weißes Haus"
-    },
-    {
-      "title": "China's Xi tells Putin: China and Russia should deepen cooperation - CCTV",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9857379/Chinas-Xi-tells-Putin-China-and-Russia-should-deepen-cooperation---CCTV.aspx?xy=rss",
-      "published_zurich": "18.11.2026, 09:13 MEZ",
+      "url": "https://www.financialjuice.com/News/9858553/Trump-has-raised-the-cases-of-Youlin-Chen-and-Min-Zin-to-Chinas-President-Xi---ABC.aspx?xy=rss",
+      "published_zurich": "18.11.2026, 21:58 MEZ",
       "topic": "China"
     },
     {
-      "title": "Thai government clarifies US tariffs, says trade deal will not immediately open markets",
-      "source": "Khaosod English",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNYUVROEtYemhKeDAwNERieWtnYWI0ODJQZnVjdlZTUmd5bVN1cW96Um1WazRKcy01VklsTkJvY3VBRUs4YU42OEFwMERubEpwRVF0QnYxWnNyR0FqQzJoMFM1YW4tcjk4Ul9hbGY1LWxMc3F5QWhBUEFKMHVUUFlYaTY2TS0xUnFVMHcwZWV3UU1kWnBxZFYxSXpVZ1NTVXVWVmZkb2dEMm5yMTc5dlZISTRYYnlWRnFwSThVLW5wV1lPUFF4eE1JUTlqWkhWOGlLVlZtatIB2gFBVV95cUxOVWJJR0lUSEZ3WHNfWXFGT1RqWDg5ZVJ0UFFzNnRhd1YtWFVKR1hTZktJQWRfUGwyb2pJNFgtTkl5WS1hSENtN05NdEozd3NBejNvRFJwQ0pkZTUyNjFRUmpXcl9UeE9kcjdhaFNkR2xwakJRYmY0cHBlOEQ5S0YxZUtTd3VwMVFfVDdVdTR6VVVUN2V4Wk9zSGZKaFRNdGFOZzNjcXNyVFhJRzdWNThKbE5rcjJJZmpmMDVFX2dLOTBjUUdNbW11TUR0OGh3b3BORmJWQTUxeFQxQQ?oc=5",
-      "published_zurich": "18.11.2026, 03:58 MEZ",
+      "title": "IRIB News: Three oil tankers caught fire, stopped after hitting sea mines east of Strait of Hormuz, having ignored Navy warnings - Iran Army",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9858490/IRIB-News-Three-oil-tankers-caught-fire-stopped-after-hitting-sea-mines-east-of-Strait-of-Hormuz-having-ignored-Navy-warnings---Iran-Army.aspx?xy=rss",
+      "published_zurich": "18.11.2026, 21:07 MEZ",
+      "topic": "Iran"
+    },
+    {
+      "title": "Brent Crude futures settle at $91.95/bbl, down $1.19, 1.28%",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9858467/Brent-Crude-futures-settle-at-9195bbl-down-119-128.aspx?xy=rss",
+      "published_zurich": "18.11.2026, 20:43 MEZ",
+      "topic": "Öl"
+    },
+    {
+      "title": "EU governments authorise signature of trade deal agreement with Indonesia",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcXJIdmxPSUc3bmRtUGRnWk5CZUFYcG9vaHh5bUpHNnZZYmpSd0ZiR0lYV2FIZGdxeXhSR25rWkE1MjNYbkNTeC1KNlpNWEg5UGtMX1h0djhUXy1vZW9wQjk3WV85UHQyWmRCeXYxWE96aFZCRnViUFd6dmRnVVU5V09FekktbVNzT0RObXg1S0hPSHdSVzM3a292OEpJRzhzTHN1UzBEbm9paFlRbXlIRGVyNkVYbkY1c0N0UVdCT3c?oc=5",
+      "published_zurich": "18.11.2026, 19:31 MEZ",
       "topic": "Zölle"
     },
     {
-      "title": "Democrats Consider Government Shutdown To Force Trump To End The Iran War",
-      "source": "HuffPost",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdXRHczM1S3JtREFsaEVIWDluMDVpZUc3SmZYWEVuUy00YjYyUEJEZjdUb29KUjhQTktYT1FoV1haQURUSS1ITmk2XzR2eEhmTGdqekNDa0dZanNjTzJfcmRZamdUN01JLUdCTHhZZTJEbUg4TDlTN04ydzkxdEU0N2p2dkNuN2gyUlkweXpjOXcxcXFPeGhoSmc4cTB4YnNTdjBvUEFB0gGrAUFVX3lxTE9JaGRuUkVMNUEtdTEwWWZPNU94aVoxU1lWYUZXSllqYlhNV3BRWnlhTTlmanJsQVhqRXl4SjhieFlYMkRSc0NlMnpQSm9pZkgtOTB2d21meWJpVVpWM25fNkRPaFNWMmVEUzhOWVp6Zm5Zd0dYX2paLWZlMkw0djZ1NW5YWnFmT1RiTlJiV2hkVXJhRE1fVWd5Zzc2S1JTc21kb1JiSjdROG9xSQ?oc=5",
-      "published_zurich": "17.11.2026, 16:37 MEZ",
-      "topic": "Iran"
+      "title": "German government accuses Russia of attacking churches in Ukraine",
+      "source": "Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcDhmVlZ2aG1CWHowbF9rYjdOQzFjVGVGSGRpXzVUdWZPcVV0NzNuRjFtZE9fMlpmelMzZkRyTFhSUmhfMzdEM0RDelhQNF9qck1nR2VMWlpINDN1a0hYeFVxU1ZfMjQ3NGVPYVBmZVBoRzh1dFVGODNPRTV6cGhFUU9HOVh3MUJaNGNhRTVqUEZ2QnBBZ29neUZpaEk5eW02?oc=5",
+      "published_zurich": "18.11.2026, 16:48 MEZ",
+      "topic": "Ukraine"
     }
   ]
 }
