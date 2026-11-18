@@ -1,7 +1,7 @@
-name: Refresh calendar
+name: Refresh calendar and politics
 
-# Weekday snapshots of the Forex Factory week feed. The browser cannot read
-# that host (no CORS header). This job writes calendar.json only.
+# Weekday snapshots. The browser cannot read these feeds (no CORS header).
+# Each script fetches its sources once. A failed fetch keeps the old file.
 on:
   schedule:
     - cron: "0 4,7,12,14 * * 1-5"
@@ -21,14 +21,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch Forex Factory calendar once
         run: python3 refresh-calendar.py
-      - name: Commit calendar.json if events changed
+      - name: Fetch politics headlines once per source
+        run: python3 refresh-politics.py
+      - name: Commit snapshots if content changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add calendar.json
+          git add calendar.json politics.json
           if git diff --staged --quiet; then
-            echo "No calendar changes"
+            echo "No snapshot changes"
             exit 0
           fi
-          git commit -m "chore: refresh calendar $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "chore: refresh calendar and politics $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
