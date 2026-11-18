@@ -1,0 +1,34 @@
+name: Refresh calendar
+
+# Weekday snapshots of the Forex Factory week feed. The browser cannot read
+# that host (no CORS header). This job writes calendar.json only.
+on:
+  schedule:
+    - cron: "0 4,7,12,14 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-calendar
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Forex Factory calendar once
+        run: python3 refresh-calendar.py
+      - name: Commit calendar.json if events changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calendar.json
+          if git diff --staged --quiet; then
+            echo "No calendar changes"
+            exit 0
+          fi
+          git commit -m "chore: refresh calendar $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
