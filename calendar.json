@@ -1,39 +1,10 @@
 {
-  "generated_at": "2026-11-18T13:27:24+01:00",
-  "generated_at_label": "18.11.2026, 13:27 MEZ",
+  "generated_at": "2026-11-19T13:20:14+01:00",
+  "generated_at_label": "19.11.2026, 13:20 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Forex Factory · ff_calendar_thisweek.json",
   "source_url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
   "events": [
-    {
-      "date": "2026-11-18",
-      "time": "08:00",
-      "time_zurich": "2026-11-18T08:00:00+01:00",
-      "title": "CPI y/y",
-      "country": "GBP",
-      "impact": "High",
-      "impact_de": "hoch",
-      "forecast": "3.6%",
-      "previous": "3.5%"
-    },
-    {
-      "date": "2026-11-18",
-      "time": "16:00",
-      "time_zurich": "2026-11-18T16:00:00+01:00",
-      "title": "BOE Gov Bailey Speaks",
-      "country": "GBP",
-      "impact": "High",
-      "impact_de": "hoch"
-    },
-    {
-      "date": "2026-11-18",
-      "time": "20:00",
-      "time_zurich": "2026-11-18T20:00:00+01:00",
-      "title": "FOMC Meeting Minutes",
-      "country": "USD",
-      "impact": "High",
-      "impact_de": "hoch"
-    },
     {
       "date": "2026-11-19",
       "time": "14:30",
@@ -55,6 +26,27 @@
       "impact_de": "mittel",
       "forecast": "198K",
       "previous": "200K"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "16:00",
+      "time_zurich": "2026-11-20T16:00:00+01:00",
+      "title": "Revised UoM Consumer Sentiment",
+      "country": "USD",
+      "impact": "Medium",
+      "impact_de": "mittel",
+      "forecast": "51.7",
+      "previous": "51.0"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "16:00",
+      "time_zurich": "2026-11-20T16:00:00+01:00",
+      "title": "Revised UoM Inflation Expectations",
+      "country": "USD",
+      "impact": "Medium",
+      "impact_de": "mittel",
+      "previous": "4.3%"
     }
   ]
 }

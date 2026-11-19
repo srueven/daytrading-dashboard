@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-11-18T22:39:40+01:00",
-  "generated_at_label": "18.11.2026, 22:39 MEZ",
+  "generated_at": "2026-11-19T13:20:14+01:00",
+  "generated_at_label": "19.11.2026, 13:20 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Google News",
   "source_url": "https://news.google.com/rss/search",
   "items": [
     {
-      "title": "Trump has raised the cases of Youlin Chen and Min Zin to China’s President Xi - ABC.",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9858553/Trump-has-raised-the-cases-of-Youlin-Chen-and-Min-Zin-to-Chinas-President-Xi---ABC.aspx?xy=rss",
-      "published_zurich": "18.11.2026, 21:58 MEZ",
-      "topic": "China"
-    },
-    {
-      "title": "IRIB News: Three oil tankers caught fire, stopped after hitting sea mines east of Strait of Hormuz, having ignored Navy warnings - Iran Army",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9858490/IRIB-News-Three-oil-tankers-caught-fire-stopped-after-hitting-sea-mines-east-of-Strait-of-Hormuz-having-ignored-Navy-warnings---Iran-Army.aspx?xy=rss",
-      "published_zurich": "18.11.2026, 21:07 MEZ",
+      "title": "Shutdown fight takes shape as Democrats target Trump’s Iran war",
+      "source": "The Hill",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQmpxQVZsLWFmNnQ2WTl6ZVNzb2VUTlhVOUQ3SFJqVW4yNmk2MHh5ZDRCQVh4aVI5RlJkc3FVMmVWT3hub2dvUGVwTTZxZWZaY0trTnRSWVVvQlJRLTg3U2psRVByTGp4bm1tREZ5dzE0MjNSMXFMRWJJV2JsMWFPWF9QekJ3QXdxWklGZG5ITDBGUQ?oc=5",
+      "published_zurich": "19.11.2026, 12:00 MEZ",
       "topic": "Iran"
     },
     {
-      "title": "Brent Crude futures settle at $91.95/bbl, down $1.19, 1.28%",
+      "title": "Xi, Trump, Putin agree to boost supply of refined oil products.",
       "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9858467/Brent-Crude-futures-settle-at-9195bbl-down-119-128.aspx?xy=rss",
-      "published_zurich": "18.11.2026, 20:43 MEZ",
-      "topic": "Öl"
+      "url": "https://www.financialjuice.com/News/9859719/Xi-Trump-Putin-agree-to-boost-supply-of-refined-oil-products.aspx?xy=rss",
+      "published_zurich": "19.11.2026, 11:50 MEZ",
+      "topic": "China"
     },
     {
-      "title": "EU governments authorise signature of trade deal agreement with Indonesia",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcXJIdmxPSUc3bmRtUGRnWk5CZUFYcG9vaHh5bUpHNnZZYmpSd0ZiR0lYV2FIZGdxeXhSR25rWkE1MjNYbkNTeC1KNlpNWEg5UGtMX1h0djhUXy1vZW9wQjk3WV85UHQyWmRCeXYxWE96aFZCRnViUFd6dmRnVVU5V09FekktbVNzT0RObXg1S0hPSHdSVzM3a292OEpJRzhzTHN1UzBEbm9paFlRbXlIRGVyNkVYbkY1c0N0UVdCT3c?oc=5",
-      "published_zurich": "18.11.2026, 19:31 MEZ",
-      "topic": "Zölle"
+      "title": "Trump: It's very hard to give nuclear weapons up.",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9859555/Trump-Its-very-hard-to-give-nuclear-weapons-up.aspx?xy=rss",
+      "published_zurich": "19.11.2026, 09:38 MEZ",
+      "topic": "Weißes Haus"
     },
     {
-      "title": "German government accuses Russia of attacking churches in Ukraine",
-      "source": "Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcDhmVlZ2aG1CWHowbF9rYjdOQzFjVGVGSGRpXzVUdWZPcVV0NzNuRjFtZE9fMlpmelMzZkRyTFhSUmhfMzdEM0RDelhQNF9qck1nR2VMWlpINDN1a0hYeFVxU1ZfMjQ3NGVPYVBmZVBoRzh1dFVGODNPRTV6cGhFUU9HOVh3MUJaNGNhRTVqUEZ2QnBBZ29neUZpaEk5eW02?oc=5",
-      "published_zurich": "18.11.2026, 16:48 MEZ",
+      "title": "Kremlin: Ukraine was main focus at Putin-Trump meeting - TASS",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9859326/Kremlin-Ukraine-was-main-focus-at-Putin-Trump-meeting---TASS.aspx?xy=rss",
+      "published_zurich": "19.11.2026, 06:43 MEZ",
       "topic": "Ukraine"
+    },
+    {
+      "title": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRnRZZmk5aUVnWkxwOUx3YkE1S3ZwTlF1b2cwNE5RTjM1dE5tSERlZ0RObU8xTERqdUpaN0tMYWF3N1VZUTI1ZE1VQUNWY3BLb0VjbkRYQkoyajRBMjRuaEtrTzJuaGpLOERCcnNLbkVhUVRnOFlMbHhYU2duc2V3MWljcG81MUU0MEpzc3lOZFBhbDBSeGpJYjJNaWl3WjF1a002WGF2VVAtSERiX2NQOU8tZUNRalN60gG-AUFVX3lxTFBfY3BqSmFLU0RaVTh1VmVFeDdRLW83dXQ5OVItc2VTcXRHTDZ0ZG40N1I4cDJSMk1yLUlYM0tKb2JPVjQzdTNyU1pDUWRHM0lHb3NULWw2SjRwaFhPYjdUYXJtWmlFQ3p6NmE2VXRkVS1sM2V5ZHhnejlfOVZzX1dZVkFya2ljN3lRUXVUV3NYcFltSDN1SlhMT2g3Rm9YR1NxMEpZVDhheS05ZVJzSXhwMFFpRi1Wc1Q3THdqd3c?oc=5",
+      "published_zurich": "19.11.2026, 01:50 MEZ",
+      "topic": "Zölle"
     }
   ]
 }
