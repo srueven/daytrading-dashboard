@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-11-20T22:37:12+01:00",
-  "generated_at_label": "20.11.2026, 22:37 MEZ",
+  "generated_at": "2026-11-23T14:52:08+01:00",
+  "generated_at_label": "23.11.2026, 14:52 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Google News",
   "source_url": "https://news.google.com/rss/search",
   "items": [
     {
-      "title": "Trump hosts a reception at the White House - WATCH LIVE",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9862420/Trump-hosts-a-reception-at-the-White-House---WATCH-LIVE.aspx?xy=rss",
-      "published_zurich": "20.11.2026, 21:35 MEZ",
-      "topic": "Weißes Haus"
-    },
-    {
-      "title": "Trump: Russia and China are no longer involved with Venezuela",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9862291/Trump-Russia-and-China-are-no-longer-involved-with-Venezuela.aspx?xy=rss",
-      "published_zurich": "20.11.2026, 19:46 MEZ",
-      "topic": "China"
-    },
-    {
-      "title": "Trump: Consider Putin to be someone I have a very good relationship with",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9862227/Trump-Consider-Putin-to-be-someone-I-have-a-very-good-relationship-with.aspx?xy=rss",
-      "published_zurich": "20.11.2026, 19:14 MEZ",
-      "topic": "Ukraine"
-    },
-    {
-      "title": "Trump: I discussed Ukraine & Iran with Putin and Xi.",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9862183/Trump-I-discussed-Ukraine--Iran-with-Putin-and-Xi.aspx?xy=rss",
-      "published_zurich": "20.11.2026, 19:00 MEZ",
+      "title": "Trump Holds Off On Iran Strike As Netanyahu Presses For Joint Action - Report | LIVE BLOG",
+      "source": "i24NEWS",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOc3ZQMnNPYUJvbS1NdExvU2VXQnZPSkltN0NMSjBWQmE3Uzg2T0FEUU1RVFhmeXo0TGlOQUVfcFowZVBSTTdKMURiS210MzFqOGVlcmFiVFd0SllERE1yVzFvNkw1TmFNMWNSNGRSbU9XRlRCaFpOMnFQTDYySkdFMi00Um5PNkRna3ZhYXR0eDRQTUctLXAycjI4bkwtZEI1LUx4UjNMaEs0ZTV2cWtxVEQ2MVhBNUhyb2l5YlQyZjJCVXA4dVpONnVISkZCUQ?oc=5",
+      "published_zurich": "23.11.2026, 14:39 MEZ",
       "topic": "Iran"
     },
     {
-      "title": "Trump: Working on making a Canada trade deal that's fair.",
+      "title": "Counselor to US Treasury Zervos: Last week brought tightening in financial conditions",
       "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9862180/Trump-Working-on-making-a-Canada-trade-deal-thats-fair.aspx?xy=rss",
-      "published_zurich": "20.11.2026, 18:51 MEZ",
-      "topic": "Zölle"
+      "url": "https://www.financialjuice.com/News/9864429/Counselor-to-US-Treasury-Zervos-Last-week-brought-tightening-in-financial-conditions.aspx?xy=rss",
+      "published_zurich": "23.11.2026, 14:33 MEZ",
+      "topic": "Treasury"
+    },
+    {
+      "title": "Strategy buys 457 bitcoin at an avg. purchase price $64,898, from November 16th to November 22th",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9864365/Strategy-buys-457-bitcoin-at-an-avg-purchase-price-64898-from-November-16th-to-November-22th.aspx?xy=rss",
+      "published_zurich": "23.11.2026, 14:01 MEZ",
+      "topic": "Krypto"
+    },
+    {
+      "title": "China and Russia discuss financial cooperation",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9864202/China-and-Russia-discuss-financial-cooperation.aspx?xy=rss",
+      "published_zurich": "23.11.2026, 11:50 MEZ",
+      "topic": "China"
+    },
+    {
+      "title": "Russia-Ukraine rivalry threatens to turn Libya into a new front",
+      "source": "The Arab Weekly",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZFVWdVFKdnlxUm9lanRKNXVHcWQyNWlya3VsYlkzNUNMcWEwUWkwNlFXempEMXBFVEV1WEdKOG10MEdXWWRmTldaTmVwMXo4ajhZMVZPNEwtNk1vR2o2T2RvYUlDRlJRVEgxOG9zZWRsb0NlMXcyd0pfY1VWcUE2MkdrTURqdw?oc=5",
+      "published_zurich": "23.11.2026, 09:52 MEZ",
+      "topic": "Ukraine"
     }
   ]
 }
