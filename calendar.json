@@ -1,32 +1,10 @@
 {
-  "generated_at": "2026-11-23T14:52:08+01:00",
-  "generated_at_label": "23.11.2026, 14:52 MEZ",
+  "generated_at": "2026-11-24T02:23:29+01:00",
+  "generated_at_label": "24.11.2026, 02:23 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Forex Factory · ff_calendar_thisweek.json",
   "source_url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
   "events": [
-    {
-      "date": "2026-11-23",
-      "time": "15:45",
-      "time_zurich": "2026-11-23T15:45:00+01:00",
-      "title": "Flash Manufacturing PMI",
-      "country": "USD",
-      "impact": "Medium",
-      "impact_de": "mittel",
-      "forecast": "54.5",
-      "previous": "56.0"
-    },
-    {
-      "date": "2026-11-23",
-      "time": "15:45",
-      "time_zurich": "2026-11-23T15:45:00+01:00",
-      "title": "Flash Services PMI",
-      "country": "USD",
-      "impact": "Medium",
-      "impact_de": "mittel",
-      "forecast": "55.6",
-      "previous": "57.9"
-    },
     {
       "date": "2026-11-24",
       "time": "16:00",
@@ -35,8 +13,41 @@
       "country": "USD",
       "impact": "Medium",
       "impact_de": "mittel",
-      "forecast": "92.1",
+      "forecast": "92.4",
       "previous": "91.7"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "14:30",
+      "time_zurich": "2026-11-25T14:30:00+01:00",
+      "title": "Core PCE Price Index m/m",
+      "country": "USD",
+      "impact": "High",
+      "impact_de": "hoch",
+      "forecast": "0.3%",
+      "previous": "0.3%"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "14:30",
+      "time_zurich": "2026-11-25T14:30:00+01:00",
+      "title": "Prelim GDP q/q",
+      "country": "USD",
+      "impact": "High",
+      "impact_de": "hoch",
+      "forecast": "3.5%",
+      "previous": "3.4%"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "14:30",
+      "time_zurich": "2026-11-25T14:30:00+01:00",
+      "title": "Prelim GDP Price Index q/q",
+      "country": "USD",
+      "impact": "Medium",
+      "impact_de": "mittel",
+      "forecast": "2.3%",
+      "previous": "2.3%"
     }
   ]
 }
