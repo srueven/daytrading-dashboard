@@ -1,21 +1,10 @@
 {
-  "generated_at": "2026-11-24T02:23:29+01:00",
-  "generated_at_label": "24.11.2026, 02:23 MEZ",
+  "generated_at": "2026-11-25T14:43:28+01:00",
+  "generated_at_label": "25.11.2026, 14:43 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Forex Factory · ff_calendar_thisweek.json",
   "source_url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
   "events": [
-    {
-      "date": "2026-11-24",
-      "time": "16:00",
-      "time_zurich": "2026-11-24T16:00:00+01:00",
-      "title": "CB Consumer Confidence",
-      "country": "USD",
-      "impact": "Medium",
-      "impact_de": "mittel",
-      "forecast": "92.4",
-      "previous": "91.7"
-    },
     {
       "date": "2026-11-25",
       "time": "14:30",
@@ -48,6 +37,15 @@
       "impact_de": "mittel",
       "forecast": "2.3%",
       "previous": "2.3%"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "14:00",
+      "time_zurich": "2026-11-26T14:00:00+01:00",
+      "title": "Bank Holiday",
+      "country": "USD",
+      "impact": "Holiday",
+      "impact_de": "feiertag"
     }
   ]
 }
