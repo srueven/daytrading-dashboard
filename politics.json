@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-11-25T14:43:28+01:00",
-  "generated_at_label": "25.11.2026, 14:43 MEZ",
+  "generated_at": "2026-11-25T23:52:13+01:00",
+  "generated_at_label": "25.11.2026, 23:52 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Google News",
   "source_url": "https://news.google.com/rss/search",
   "items": [
     {
-      "title": "Russia's Novak on oil production capacity assessment by OPEC: We plan to complete it by the end of the year.",
+      "title": "Musk's SpaceX pledge to donate a share each to active Trump Accounts $SPCX",
       "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9867753/Russias-Novak-on-oil-production-capacity-assessment-by-OPEC-We-plan-to-complete-it-by-the-end-of-the-year.aspx?xy=rss",
-      "published_zurich": "25.11.2026, 14:15 MEZ",
-      "topic": "Öl"
-    },
-    {
-      "title": "US proposes at least 20% tariff on China after trade probe.",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9867747/US-proposes-at-least-20-tariff-on-China-after-trade-probe.aspx?xy=rss",
-      "published_zurich": "25.11.2026, 14:10 MEZ",
-      "topic": "Zölle"
-    },
-    {
-      "title": "Trump Floats US Government Stake in NVIDIA Just a Day After Raising Concerns About an Insider Trading Lawsuit",
-      "source": "inkl",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVTFXclZ4dEp1M01feF9VMlRTVk5QNDMwaUZDOHRBSzEweEpjX1dBM0VpWEJQZ2VxR2p0dUk0ZjYtWE84bXdoMGt5VUk0Ul9UY1ZKTXI1UlhoRVQ1QjRGeW9jeldDZUVaSVlsWExfQ0NJeFlsUmpFakIzMDhuVWVfZ2k1X1RjWFRjVG4xcVQtTDE2WVlBNFk2U1RUQWVPSFNJLU9yaDBBaDltOG5fT1p5amtGaEVJaWFHNm1fNHBCeFBSbzhlbFNDQlFoVDRjWk8y?oc=5",
-      "published_zurich": "25.11.2026, 13:23 MEZ",
+      "url": "https://www.financialjuice.com/News/9868353/Musks-SpaceX-pledge-to-donate-a-share-each-to-active-Trump-Accounts-SPCX.aspx?xy=rss",
+      "published_zurich": "25.11.2026, 21:21 MEZ",
       "topic": "Weißes Haus"
     },
     {
-      "title": "Iraqi oil from Kurdistan smuggled into Iran and Afghanistan, government report reveals",
+      "title": "Brent crude futures settle at $94.61/bbl, up $3.21, 3.51%",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9868327/Brent-crude-futures-settle-at-9461bbl-up-321-351.aspx?xy=rss",
+      "published_zurich": "25.11.2026, 20:44 MEZ",
+      "topic": "Öl"
+    },
+    {
+      "title": "Iraqi oil smuggled through Kurdistan to Iran and Afghanistan, government report reveals",
       "source": "The National",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTlpJVF9Cbkp1ZGVoNTYwZEZ5YXVtdWdSMjhTN2dIT2xzaUZma0YyaDlpYTc5SVMwN2hETEctczdYV1lSblNyYUJWam1MMXV2Z3hIdDFHX1o0WENaN3BZSEZ5TGVQMHNFc1lURFdBTHRaWUpyM00tRWNuLVJGc1hBU29zM0pxaVRDTnBjUmFWSV8zRFFZdUFaclJ3UzZWbVVmeTNLOURMMEFEcWF0ZXFjZEc0c3ZTRkNvOHlrdGFDcHdXaHJjOFNUMk9TU3UwY0NxQVJ1X19B?oc=5",
-      "published_zurich": "25.11.2026, 13:16 MEZ",
+      "published_zurich": "25.11.2026, 20:12 MEZ",
       "topic": "Iran"
     },
     {
-      "title": "Russia’s Deputy PM Novak: Russia to assess the need for fuel imports after 2026 depending on market conditions",
+      "title": "Fed Beige Book: Eight of the twelve federal reserve districts reported growth in the slight to moderate range, while four districts reported no change.",
       "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9867673/Russias-Deputy-PM-Novak-Russia-to-assess-the-need-for-fuel-imports-after-2026-depending-on-market-conditions.aspx?xy=rss",
-      "published_zurich": "25.11.2026, 13:00 MEZ",
+      "url": "https://www.financialjuice.com/News/9868285/Fed-Beige-Book-Eight-of-the-twelve-federal-reserve-districts-reported-growth-in-the-slight-to-moderate-range-while-four-districts-reported-no-change.aspx?xy=rss",
+      "published_zurich": "25.11.2026, 20:00 MEZ",
+      "topic": "Fed"
+    },
+    {
+      "title": "French opposition demands answers over undisclosed military mission in Ukraine",
+      "source": "The New Voice of Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWd2cnlTVzBoc2tSOE04ekZsRk9aYzJzTUUtcUZETGYyZVJyd1M3cXJmY1hBSm5ka1VmSVYtMzVYMjd2b2xvcDBhcVJ5b2M2RjFDLTdJUmE5UGFjTU9jTDBiSzhZZ3ZLbC1oMkVOZHVaXzFaejVnMk5qbkRZWmJyWkk2Vm5UZjR0WU9DMy1nWjI3WWk1YThLTkE2OVZXcjjSAZsBQVVfeXFMUG9POWZ2NS1ta3pOamRncDhtZzlPd0steE0yT0VwZzk3Vm93M09hTDdxOXN3UWd5NlEwc1lpUVJ5ZElfU1ZyQTJTaEpUMlFGaXIzU2g4ZEZTWXRBXzRHM0Fka3p0NkxfZjlKVk5NeEpJVXE1Yms3TDlzWnFzNWU0aUFrUGVPc2dUUWJOb1U1QzREenh2bjRfN0wtVEU?oc=5",
+      "published_zurich": "25.11.2026, 19:37 MEZ",
       "topic": "Ukraine"
     }
   ]
