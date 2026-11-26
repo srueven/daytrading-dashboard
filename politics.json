@@ -1,30 +1,37 @@
 {
-  "generated_at": "2026-11-26T14:22:06+01:00",
-  "generated_at_label": "26.11.2026, 14:22 MEZ",
+  "generated_at": "2026-11-26T23:41:17+01:00",
+  "generated_at_label": "26.11.2026, 23:41 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Google News",
   "source_url": "https://news.google.com/rss/search",
   "items": [
     {
-      "title": "Trump: US Q3 GDP just got revised up to a massive +4.3%, shattering expert predictions and nearly doubling Q2’s 2.2% growth. The Trump Economy is roaring, and the mainstream media can’t hide it anymore.",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9869397/Trump-US-Q3-GDP-just-got-revised-up-to-a-massive-43-shattering-expert-predictions-and-nearly-doubling-Q2s-22-growth-The-Trump-Economy-is-roaring-and-the-mainstream-media-cant-hide-it-anymore.aspx?xy=rss",
-      "published_zurich": "26.11.2026, 13:39 MEZ",
-      "topic": "Weißes Haus"
-    },
-    {
-      "title": "Iran's supreme leader, Mojtaba Khamenei, in a written statement: Basij volunteer militia should work towards realising 'every Iranian, a Basiji' slogan - State TV",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9869263/Irans-supreme-leader-Mojtaba-Khamenei-in-a-written-statement-Basij-volunteer-militia-should-work-towards-realising-every-Iranian-a-Basiji-slogan---State-TV.aspx?xy=rss",
-      "published_zurich": "26.11.2026, 11:49 MEZ",
-      "topic": "Iran"
-    },
-    {
-      "title": "China proposes encouraging AI firms to pay for quality data",
-      "source": "FinancialJuice",
-      "url": "https://www.financialjuice.com/News/9869262/China-proposes-encouraging-AI-firms-to-pay-for-quality-data.aspx?xy=rss",
-      "published_zurich": "26.11.2026, 11:49 MEZ",
+      "title": "Nvidia Chip Sellers Scramble to Find Customers After Government Tightens China Remote Access Rules",
+      "source": "Breitbart",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdkxtUDFVRDM3bmY1SnhraklPbmpibmdtQ3B1RWhWXzZlbTh6WHYyMlhZelBVSEFYWFVuVTBvOWl6UkQyUUliQ1RHdzNRYndDQzFUTGRXNVI4MXB3X3ZsQk42QkF2cHlTbFY2S3NqRUdFU3A4Nk9pQWxYVVYtbTlza2VHaGh6bWNROWdWZkpMSVM1MnpLbDZ6UnFZX2pYUHh3VzB4SHV3aDAtWTVndHoyUFpqTWFSUHlPZGZxcnNsZnZHR1hlSS1EU194M2hsZXBVNG90Tjl5RDY?oc=5",
+      "published_zurich": "26.11.2026, 22:31 MEZ",
       "topic": "China"
+    },
+    {
+      "title": "Brent Crude futures settle at $96.57/bbl, up $1.96, 2.07%",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9869717/Brent-Crude-futures-settle-at-9657bbl-up-196-207.aspx?xy=rss",
+      "published_zurich": "26.11.2026, 19:17 MEZ",
+      "topic": "Öl"
+    },
+    {
+      "title": "Trump: Urged Russian President Putin to pull back military aggression across Europe, believes Russia-Ukraine deal can be reached quickly - Truth Social.",
+      "source": "FinancialJuice",
+      "url": "https://www.financialjuice.com/News/9869554/Trump-Urged-Russian-President-Putin-to-pull-back-military-aggression-across-Europe-believes-Russia-Ukraine-deal-can-be-reached-quickly---Truth-Social.aspx?xy=rss",
+      "published_zurich": "26.11.2026, 15:55 MEZ",
+      "topic": "Ukraine"
+    },
+    {
+      "title": "Can Trump continue with Iran war despite funding restrictions?",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPU3RqQ0dlWHRjbm5jSTd1SjV0YU9vUlhIX1JCUTh6ZFh6RWVHSFY4V2ZWWWNjMG9DVEd6QnUxckNYdFZ1TGtjTjZqTDc5U3E4eUJwYUw5S0dUN0JLR19QazVucDdlai1IN1FTZlhZbGc3dmY3R1o5UEZVRFFiRmNGd2RUQ3piVmZ2VlBaczVkYXN0Yy01N1Fjd1B5cTVOYTl5NnpFZElB0gGrAUFVX3lxTFBzYkdXQXFreExwcXdDQ2Q3Ung3MlFVU21HMnA2RnN5dFdUeklpWHNtX3lBTUxPaThVSDBZMmZzOE5aYldab3l4cHJwQW1tTzNfODZGYTZOUlk2eEQwRFV1VWotclhidVlwVVc0SVRUODRGVGhKRUZqa3ptZ1M3MExfMUdVLUsyaTVvallfbTg3aldjNHNCS1ZlVHJNYWFPN1pMSk9QNTlaNXdQOA?oc=5",
+      "published_zurich": "26.11.2026, 15:20 MEZ",
+      "topic": "Iran"
     },
     {
       "title": "China foreign ministry, on US tariffs announcement: Tariff wars and trade wars serve no one's interests",
@@ -32,13 +39,6 @@
       "url": "https://www.financialjuice.com/News/9868986/China-foreign-ministry-on-US-tariffs-announcement-Tariff-wars-and-trade-wars-serve-no-ones-interests.aspx?xy=rss",
       "published_zurich": "26.11.2026, 08:05 MEZ",
       "topic": "Zölle"
-    },
-    {
-      "title": "Top House Democrat Demands Trump Halt ‘Shameful’ $10B Lukoil Deal, Warns It Undercuts Ukraine",
-      "source": "Kyiv Post",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5faGp4TmdwQXlJTHNZUnplTTN2VHdQclVISVoyYmh5TkRzOUZEODJZZ29XRkNtcnZkNVRZNExvLTdnNmJyUnNMd29fRQ?oc=5",
-      "published_zurich": "26.11.2026, 03:16 MEZ",
-      "topic": "Ukraine"
     }
   ]
 }
