@@ -1,18 +1,8 @@
 {
-  "generated_at": "2026-11-26T14:22:06+01:00",
-  "generated_at_label": "26.11.2026, 14:22 MEZ",
+  "generated_at": "2026-11-27T14:19:35+01:00",
+  "generated_at_label": "27.11.2026, 14:19 MEZ",
   "timezone": "Europe/Zurich",
   "source": "Forex Factory · ff_calendar_thisweek.json",
   "source_url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-  "events": [
-    {
-      "date": "2026-11-26",
-      "time": "14:00",
-      "time_zurich": "2026-11-26T14:00:00+01:00",
-      "title": "Bank Holiday",
-      "country": "USD",
-      "impact": "Holiday",
-      "impact_de": "feiertag"
-    }
-  ]
+  "events": []
 }
